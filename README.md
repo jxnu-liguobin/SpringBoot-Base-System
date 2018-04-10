@@ -1,3 +1,4 @@
+![AUR](https://img.shields.io/aur/license/yaourt.svg)
 ##  项目说明 
 *   后台架构基于BookManagement_Bubblyyi二次开发
 *   系统管理后台基本功能包括用户管理，角色管理，资源链接管理，图书管理模块，SQL监控，个人信息查看与密码修改，待还图书查询与自主还书。可以动态分配权限和角色。
@@ -6,7 +7,8 @@
         主体框架：SpringBoot
         模板引擎：Freemarker
         MVC框架：SpringMVC
-        前端：Jquery、Jquery validate、 hAdmin UI、bootstrap、BootStrap Table
+        JDK:1.8
+        前端：Jquery、Jquery validate、 hAdmin UI、bootstrap、BootStrap Table
         持久层框架：SpringData JPA
         权限控制框架：Shiro
         缓存：Ehcache、Spring cache
@@ -60,5 +62,4 @@
         完全区分，删除用户与删除数据【前者相当于注销，后者完全删除】
         Loading...
 
-![AUR](https://img.shields.io/aur/license/yaourt.svg)
 
