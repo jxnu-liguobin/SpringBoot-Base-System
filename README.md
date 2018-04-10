@@ -2,23 +2,23 @@
 *   后台架构基于BookManagement_Bubblyyi二次开发
 *   系统管理后台基本功能包括用户管理，角色管理，资源链接管理，图书管理模块，SQL监控，个人信息查看与密码修改，待还图书看出与自主还书。可以动态分配权限和角色。
     
-    数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
-    主体框架：SpringBoot
-    模板引擎：Freemarker
-    MVC框架：SpringMVC
-    前端：Jquery、Jquery validate、 hAdmin UI、bootstrap、BootStrap Table
-    持久层框架：SpringData JPA
-    权限控制框架：Shiro
-    缓存：Ehcache、Spring cache
-    数据源：Druid
-    数据库：MySQL
-    日志：logback、Aspect
-    JSON工具：google gson
-    开发工具：Eclipse
-    依赖管理：maven
-    代码托管：Github
-    发布方式：Jar/docker
-    应用服务器：内嵌式Tomcat8.5 
+        数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
+        主体框架：SpringBoot
+        模板引擎：Freemarker
+        MVC框架：SpringMVC
+        前端：Jquery、Jquery validate、 hAdmin UI、bootstrap、BootStrap Table
+        持久层框架：SpringData JPA
+        权限控制框架：Shiro
+        缓存：Ehcache、Spring cache
+        数据源：Druid
+        数据库：MySQL
+        日志：logback、Aspect
+        JSON工具：google gson
+        开发工具：Eclipse
+        依赖管理：maven
+        代码托管：Github
+        发布方式：Jar/docker
+        应用服务器：内嵌式Tomcat8.5 
  
 ### 预览图
 ![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png)
@@ -58,3 +58,4 @@
         增加我的借阅，包含借阅书籍与借阅日期、待还日期等等、预期不可自主换设定
         添加自主还书后台
         完全区分，删除用户与删除数据【前者相当于注销，后者完全删除】
+        Loading...
