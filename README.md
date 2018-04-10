@@ -1,10 +1,25 @@
+##  项目说明 
 *   后台架构基于BookManagement_Bubblyyi二次开发
 *   系统管理后台基本功能包括用户管理，角色管理，资源链接管理，图书管理模块，SQL监控，个人信息查看与密码修改，待还图书看出与自主还书。可以动态分配权限和角色。
-*   使用SpringBoot、SpringData JPA、Shiro等技术，使用Freemarker模版渲染页面。
-*   系统中对SpringData的查询条件Specification做了简单的封装，更加方便。
-*   前端技术：使用Hadmin系统模版，数据表格使用BootStrap Table插件，弹窗使用Layer插件，日期选择使用Laydate插件。表单验证使用JQuery Validate插件等等。
-*   数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
- 
+    
+    数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
+    主体框架：SpringBoot
+    模板引擎：Freemarker
+    MVC框架：SpringMVC
+    前端：Jquery、Jquery validate、 hAdmin UI、bootstrap、BootStrap Table
+    持久层框架：SpringData JPA
+    权限控制框架：Shiro
+    缓存：Ehcache、Spring cache
+    数据源：Druid
+    数据库：MySQL
+    日志：logback、Aspect
+    JSON工具：google gson
+    开发工具：Eclipse
+    依赖管理：maven
+    代码托管：Github
+    发布方式：Jar/docker
+    应用服务器：内嵌式Tomcat8.5 
+ 
 ### 预览图
 ![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png)
 ![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E6%9F%A5%E8%AF%A2.png)
