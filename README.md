@@ -1,3 +1,4 @@
+*   后台架构基于BookManagement_Bubblyyi二次开发
 *   系统管理后台基本功能包括用户管理，角色管理，资源链接管理，图书管理模块，SQL监控，个人信息查看与密码修改，待还图书看出与自主还书。可以动态分配权限和角色。
 *   使用SpringBoot、SpringData JPA、Shiro等技术，使用Freemarker模版渲染页面。
 *   系统中对SpringData的查询条件Specification做了简单的封装，更加方便。
