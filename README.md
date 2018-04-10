@@ -1,8 +1,8 @@
 *   系统管理后台基本功能包括用户管理，角色管理，资源链接管理，图书管理模块，SQL监控，个人信息查看与密码修改，待还图书看出与自主还书。可以动态分配权限和角色。
 *   使用SpringBoot、SpringData JPA、Shiro等技术，使用Freemarker模版渲染页面。
-*   系统中对SpringData的查询条件Specification做了简单的封装，更加方便查询条件的灵活使用。
+*   系统中对SpringData的查询条件Specification做了简单的封装，更加方便。
 *   前端技术：使用Hadmin系统模版，数据表格使用BootStrap Table插件，弹窗使用Layer插件，日期选择使用Laydate插件。表单验证使用JQuery Validate插件等等。
-*   数据库使用Mysql,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
+*   数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
  
  
 ### 使用：
@@ -11,7 +11,7 @@
     3）修改spring.jpa.hibernate.ddl-auto为create，目的是让系统自动建表同时初始化相关集成数据。
     如果不需要自动初始化数据，可以删除resource目录下的managesystemdb.sql文件。或者改为validate
     4）启动后，访问：http://localhost:8080/admin会自动跳转到后台登录页面。
-    5）初始用户名和密码为：admin/adminm。
+    5）初始用户名和密码为：admin/adminm。
 
 ### 3月25日
 1、增加全局异常处理
