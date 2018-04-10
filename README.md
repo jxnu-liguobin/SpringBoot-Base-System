@@ -7,7 +7,7 @@
         主体框架：SpringBoot
         模板引擎：Freemarker
         MVC框架：SpringMVC
-        JDK:1.8
+        JDK:1.8
         前端：Jquery、Jquery validate、 hAdmin UI、bootstrap、BootStrap Table
         持久层框架：SpringData JPA
         权限控制框架：Shiro
