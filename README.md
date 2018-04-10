@@ -13,7 +13,8 @@
         待还图书查询与自主还书
         动态分配资源权限和角色
        
- *       使用的技术        
+ *       使用的技术
+ 
 
         数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
         主体框架：SpringBoot
