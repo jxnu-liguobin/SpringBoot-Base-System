@@ -15,7 +15,7 @@
        
  *       使用的技术
 
-        数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
+       
         主体框架：SpringBoot
         模板引擎：Freemarker
         MVC框架：SpringMVC
