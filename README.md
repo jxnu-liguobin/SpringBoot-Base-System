@@ -4,6 +4,11 @@
 *   前端技术：使用Hadmin系统模版，数据表格使用BootStrap Table插件，弹窗使用Layer插件，日期选择使用Laydate插件。表单验证使用JQuery Validate插件等等。
 *   数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
  
+### 预览图
+![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png)
+![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E6%9F%A5%E8%AF%A2.png)
+![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png)
+![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C.png)
  
 ### 使用：
     1）使用mysql数据库，先建立一个空数据库base，使用utf-8字符集。
