@@ -16,7 +16,7 @@
  *       使用的技术
 
        
-        主体框架：SpringBoot
+        主体框架：SpringBoot1.5.10
         模板引擎：Freemarker
         MVC框架：SpringMVC
         JDK:1.8
