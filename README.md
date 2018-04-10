@@ -14,8 +14,9 @@
         缓存：Ehcache、Spring cache
         数据源：Druid
         数据库：MySQL
-        日志：logback、Aspect
+        日志：logback
         JSON工具：google gson
+        其他：Aspect
         开发工具：Eclipse
         依赖管理：maven
         代码托管：Github
