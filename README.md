@@ -1,6 +1,7 @@
 ![AUR](https://img.shields.io/aur/license/yaourt.svg)
 ##  项目说明 
 *   系统管理后台基本功能包括:
+
         用户管理 
         角色管理
         资源链接管理
@@ -9,9 +10,11 @@
         SQL监控
         自主修改个人信息
         待还图书查询与自主还书
-        动态分配资源权限和角色
-    
-        数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
+        动态分配资源权限和角色
+       
+ *       使用的技术        
+
+        数据库使用MySQL,数据库连接池使用Druid支持多数据源，Spring Web与Service层监控。
         主体框架：SpringBoot
         模板引擎：Freemarker
         MVC框架：SpringMVC
