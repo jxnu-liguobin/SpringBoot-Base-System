@@ -59,3 +59,6 @@
         添加自主还书后台
         完全区分，删除用户与删除数据【前者相当于注销，后者完全删除】
         Loading...
+
+![AUR](https://img.shields.io/aur/license/yaourt.svg)
+
