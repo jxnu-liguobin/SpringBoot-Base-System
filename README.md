@@ -1,7 +1,7 @@
 ![AUR](https://img.shields.io/aur/license/yaourt.svg)
 ##  项目说明 
 *   后台架构基于BookManagement_Bubblyyi二次开发
-*   系统管理后台基本功能包括:
+*   >系统管理后台基本功能包括:
 >>用户管理
 >>角色管理
 >>资源链接管理
