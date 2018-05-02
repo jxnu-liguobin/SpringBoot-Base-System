@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.edu.jxnu.base.common.JsonResult;
+import cn.edu.jxnu.base.common.MemorandumUtils;
 import cn.edu.jxnu.base.controller.BaseController;
 import cn.edu.jxnu.base.entity.Role;
 import cn.edu.jxnu.base.service.IRoleService;
+import cn.edu.jxnu.base.service.IUserService;
 import cn.edu.jxnu.base.service.specification.SimpleSpecificationBuilder;
 import cn.edu.jxnu.base.service.specification.SpecificationOperator.Operator;
 
@@ -32,6 +34,12 @@ public class RoleController extends BaseController {
 	@Autowired
 	private IRoleService roleService;
 
+	@Autowired
+	private MemorandumUtils memorandumUtils;
+	
+	@Autowired
+	private IUserService userService;
+	
 	/**
 	 * 打开角色管理首页页面
 	 * 
@@ -106,13 +114,16 @@ public class RoleController extends BaseController {
 	 * @version V1.0
 	 * @param role
 	 * @param map
+	 * @param uCode 操作人
 	 * @return JsonResult
 	 */
 	@RequestMapping(value = { "/edit" }, method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult edit(Role role, ModelMap map) {
+	public JsonResult edit(Role role, ModelMap map,@RequestParam("uCode") String uCode) {
 		try {
 			roleService.saveOrUpdate(role);
+			memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+					"修改/新增角色", role.getRoleKey() + " | " + role.getName());
 		} catch (Exception e) {
 			return JsonResult.failure(e.getMessage());
 		}
@@ -126,12 +137,15 @@ public class RoleController extends BaseController {
 	 * @version V1.0
 	 * @param id
 	 * @param map
+	 * @param uCode 操作人
 	 * @return JsonResult
 	 */
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult delete(@PathVariable Integer id, ModelMap map) {
+	public JsonResult delete(@PathVariable Integer id, ModelMap map, @RequestParam("uCode") String uCode) {
 		try {
+			memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+					"删除角色", roleService.find(id).getRoleKey() + " | " + roleService.find(id).getName());
 			roleService.delete(id);
 		} catch (Exception e) {
 			e.printStackTrace();

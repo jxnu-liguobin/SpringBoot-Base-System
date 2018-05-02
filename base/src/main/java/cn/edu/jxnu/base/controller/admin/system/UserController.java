@@ -14,9 +14,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.edu.jxnu.base.common.JsonResult;
+import cn.edu.jxnu.base.common.MemorandumUtils;
 import cn.edu.jxnu.base.config.shiro.RetryLimitHashedCredentialsMatcher;
 import cn.edu.jxnu.base.controller.BaseController;
 import cn.edu.jxnu.base.entity.Role;
@@ -48,6 +50,8 @@ public class UserController extends BaseController {
 	private IUserService userService;
 	@Autowired
 	private IRoleService roleService;
+	@Autowired
+	private MemorandumUtils memorandumUtils;
 
 	@RequestMapping(value = { "/", "/index" })
 	public String index() {
@@ -111,14 +115,19 @@ public class UserController extends BaseController {
 	 * @version V1.0
 	 * @param user
 	 * @param map
+	 * @param uCode
+	 *            操作人
 	 * @return JsonResult
 	 */
 	@RequestMapping(value = { "/edit" }, method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult edit(User user, ModelMap map) {
+	public JsonResult edit(User user, ModelMap map, @RequestParam("uCode") String uCode) {
 		try {
 			log.info("inputuser:" + user.toString());
 			userService.saveOrUpdate(user);
+			memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+					"修改/新增用户", user.getUserCode() + " | " + user.getUserName());
+
 		} catch (Exception e) {
 			return JsonResult.failure(e.getMessage());
 		}
@@ -132,19 +141,27 @@ public class UserController extends BaseController {
 	 * @version V1.0
 	 * @param id
 	 * @param map
+	 * @param uCode
+	 *            操作人
 	 * @return JsonResult
 	 */
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult delete(@PathVariable Integer id, ModelMap map) {
+	public JsonResult delete(@PathVariable Integer id, ModelMap map, @RequestParam("uCode") String uCode) {
 		String res = "";
 		try {
+			User beU = userService.find(id);
 			userService.delete(id);
 			User user = userService.find(id);
 			if (user != null && user.getDeleteStatus() == 1) {
 				res = "已注销";
-			} else if (user == null) {
+				memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+						"注销用户", beU.getUserCode() + " | " + beU.getUserName());
+			}
+			if (user == null) {
 				res = "已删除";
+				memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+						"删除用户", beU.getUserCode() + " | " + beU.getUserName());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

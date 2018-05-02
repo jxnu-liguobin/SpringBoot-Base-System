@@ -161,7 +161,7 @@
                 $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "${ctx!}/admin/user/edit",
+                    url: '${ctx!}/admin/user/edit?uCode='+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>',
                     data: $(form).serialize(),//序列化表单的值，把输入的内容用&符号连接起来name=xxx&paw=xxx，用于ajax向后台发送数据
                     success: function(msg){
                         layer.msg(msg.message, {time: 2000},function(){

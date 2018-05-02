@@ -50,9 +50,42 @@ public class MemorandumUtils {
 		return memorandumService;
 	}
 
+	/**
+	 * 自主登陆或者注册使用，即本身就是操作人
+	 * 
+	 * @author 梦境迷离.
+	 * @time 2018年5月2日
+	 * @version v1.0
+	 * @param memorandumUtils
+	 * @param usercode
+	 * @param userName
+	 * @param type
+	 */
 	public synchronized final void saveMemorandum(MemorandumUtils memorandumUtils, String usercode, String userName,
 			String type) {
 		Memorandum m = new Memorandum(0, new Date(), usercode, userName, type + " | " + usercode);
+		log.info("保存操作记录:{}", m.toString());
+		memorandumUtils.instance().save(m);
+	}
+
+	/**
+	 * 
+	 * @author 梦境迷离.
+	 * @time 2018年5月2日
+	 * @version v1.0
+	 * @param memorandumUtils
+	 * @param usercode
+	 *            执行操作的管理员账号
+	 * @param userName
+	 *            执行操作的管理员姓名
+	 * @param type
+	 *            操作类型
+	 * @param ucode
+	 *            被执行操作的用户账号
+	 */
+	public synchronized final void saveMemorandum(MemorandumUtils memorandumUtils, String usercode, String userName,
+			String type, String ucode) {
+		Memorandum m = new Memorandum(0, new Date(), usercode, userName, type + " | " + ucode);
 		log.info("保存操作记录:{}", m.toString());
 		memorandumUtils.instance().save(m);
 	}

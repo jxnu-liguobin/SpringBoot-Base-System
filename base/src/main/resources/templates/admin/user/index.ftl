@@ -227,7 +227,7 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "${ctx!}/admin/user/delete/" + id,
+                url: "${ctx!}/admin/user/delete/" + id +'?uCode='+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>',
                 success: function(msg){
                     layer.msg(msg.message, {time: 2000},function(){
                         $('#table_list').bootstrapTable("refresh");

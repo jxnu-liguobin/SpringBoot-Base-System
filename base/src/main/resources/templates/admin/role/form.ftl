@@ -109,7 +109,7 @@
     	    	$.ajax({
    	    		   type: "POST",
    	    		   dataType: "json",
-   	    		   url: "${ctx!}/admin/role/edit",
+   	    		   url: "${ctx!}/admin/role/edit?uCode="+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>',
    	    		   data: $(form).serialize(),
    	    		   success: function(msg){
 	   	    			layer.msg(msg.message, {time: 2000},function(){

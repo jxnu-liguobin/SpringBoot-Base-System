@@ -125,7 +125,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
                         <li>
-                            <a href="${ctx!}/admin/logout">
+                            <a href='${ctx!}/admin/logout/<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>'>
                                 <div>
                                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 注销
                                     <span class="pull-right text-muted small"><@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userName"/></span>

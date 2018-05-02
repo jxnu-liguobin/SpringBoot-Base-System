@@ -89,7 +89,7 @@
             //必须设置，不然request.getParameter获取不到请求参数
             contentType: "application/x-www-form-urlencoded",
             //获取数据的Servlet地址
-            url: "${ctx!}/assets/borrowList",
+            url: "${ctx!}/assets/borrowList?uCode="+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>',
             //表格显示条纹
             striped: true,
             //启动分页

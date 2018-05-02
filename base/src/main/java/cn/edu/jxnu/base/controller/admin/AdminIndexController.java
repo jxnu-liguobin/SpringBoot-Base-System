@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.edu.jxnu.base.common.Constats;
@@ -82,7 +83,7 @@ public class AdminIndexController extends BaseController {
 	 */
 	@RequestMapping(value = { "/admin/info" })
 	public String info(ModelMap map, HttpServletResponse response, Integer id) throws TimeoutException {
-		log.info("用户id:"+id);
+		log.info("用户id:" + id);
 		User u = (User) SecurityUtils.getSubject().getSession().getAttribute(Constats.CURRENTUSER + id);
 		if (u != null) {
 			/**
@@ -101,7 +102,7 @@ public class AdminIndexController extends BaseController {
 				/**
 				 * 重定向到登录页面
 				 */
-				redirect(response, "/admin/logout");
+				redirect(response, "/admin/login");
 			}
 		}
 		return "admin/info";
@@ -193,7 +194,7 @@ public class AdminIndexController extends BaseController {
 		try {
 			userService.saveOrUpdate(user);
 			// 更新session
-			SecurityUtils.getSubject().getSession().setAttribute(Constats.CURRENTUSER, user);
+			SecurityUtils.getSubject().getSession().setAttribute(Constats.CURRENTUSER + user.getId(), user);
 		} catch (Exception e) {
 			return JsonResult.failure(e.getMessage());
 		}
@@ -207,11 +208,14 @@ public class AdminIndexController extends BaseController {
 	 * @time 2018年4月10日 下午5:17:45.
 	 * @version V1.0
 	 * @param map
+	 * @param uCode
+	 *            操作人
 	 * @return Page 类型 BorrowBook
 	 */
 	@RequestMapping(value = { "/assets/borrowList" })
 	@ResponseBody
-	public Page<BorrowBook> borrowList(ModelMap map) {
+	public Page<BorrowBook> borrowList(ModelMap map, @RequestParam(value = "uCode") String uCode) {
+		User u = userService.findByUserCode(uCode);
 		SimpleSpecificationBuilder<BorrowBook> builder = new SimpleSpecificationBuilder<BorrowBook>();
 		String bookName = request.getParameter("inputBookName");
 		String bookAuthor = request.getParameter("inputAuthor");
@@ -226,7 +230,7 @@ public class AdminIndexController extends BaseController {
 		if (StringUtils.isNotBlank(bookPress)) {
 			builder.add("bookPress", Operator.likeAll.name(), bookPress);
 		}
-		User user = (User) SecurityUtils.getSubject().getSession().getAttribute(Constats.CURRENTUSER);
+		User user = (User) SecurityUtils.getSubject().getSession().getAttribute(Constats.CURRENTUSER + u.getId());
 		if (user.getId() != null) {
 			builder.add("userId", Operator.eq.name(), user.getId());
 		} else {

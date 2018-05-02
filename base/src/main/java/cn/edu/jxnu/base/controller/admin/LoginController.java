@@ -10,6 +10,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -67,7 +68,7 @@ public class LoginController extends BaseController {
 	 * @return String
 	 */
 	@RequestMapping(value = { "/admin/login" }, method = RequestMethod.POST)
-	public String login(@RequestParam("usercode") String usercode, @RequestParam("password") String password,
+	public String login(@RequestParam(value="usercode",required=false) String usercode, @RequestParam("password") String password,
 			ModelMap model) {
 		Subject subject = null;
 		UsernamePasswordToken token = null;
@@ -118,13 +119,17 @@ public class LoginController extends BaseController {
 	 * 安全退出
 	 * 
 	 * @time 2018年4月10日 下午5:19:11.
+	 * @param uCode
+	 *            操作人
 	 * @version V1.0
 	 * @return String
 	 */
-	@RequestMapping(value = { "/admin/logout" }, method = RequestMethod.GET)
-	public String logout() {
+	@RequestMapping(value = { "/admin/logout/{uCode}" }, method = RequestMethod.GET)
+	public String logout(@PathVariable("uCode") String uCode) {
 		Subject subject = SecurityUtils.getSubject();
 		subject.logout();// 调用主体的logout方法进行登出
+		memorandumUtils.saveMemorandum(memorandumUtils,uCode, userService.findByUserCode(uCode).getUserName(), "登出");
+
 		return redirect("admin/login");
 	}
 

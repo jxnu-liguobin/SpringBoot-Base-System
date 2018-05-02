@@ -107,7 +107,7 @@
 			        sortable: true,
 			        align: 'center'
 			    },{
-			        title: "操作名称",
+			        title: "操作 | ID/KEY | 姓名/名称",
 			        field: "resourceName",
 			        align: 'center'
 			    },{
