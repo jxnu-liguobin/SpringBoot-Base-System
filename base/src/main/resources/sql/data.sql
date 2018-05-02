@@ -18,6 +18,7 @@ INSERT INTO `tb_resource` VALUES ('14', '2018-03-01 11:21:54', '资源删除', n
 INSERT INTO `tb_resource` VALUES ('15', '2018-03-01 11:21:54', '图书管理', null, '0', '2', '图书管理', '4', 'system:books:book_management', '/admin/books/book_management', '1', '2018-04-01 14:12:31', null);
 INSERT INTO `tb_resource` VALUES ('16', '2018-03-01 09:45:58', 'SQL监控', null, '0', '2', 'SQL监控', '2', 'system:resource:druid', '/druid', '1', '2018-04-01 09:45:58', null);
 INSERT INTO `tb_resource` VALUES ('17', '2018-04-02 11:37:23', '用户恢复', null, '0', '3', '用户恢复', '2', 'system:user:resume', '/admin/user/resume', '2', '2018-04-02 11:37:23', '1');
+INSERT INTO `tb_resource` VALUES ('18', '2018-05-02 08:28:58', '备忘记录', null, '0', '2', '备忘记录', '2', 'system:memorandum:memorandum', '/admin/memorandum/*', '1', '2018-05-02 08:28:58', null);
 
 -- ----------------------------
 -- Records of tb_role
@@ -45,6 +46,7 @@ INSERT INTO `tb_role_resource` VALUES ('1', '14');
 INSERT INTO `tb_role_resource` VALUES ('1', '15');
 INSERT INTO `tb_role_resource` VALUES ('1', '16');
 INSERT INTO `tb_role_resource` VALUES ('1', '17');
+INSERT INTO `tb_role_resource` VALUES ('1', '18');
 
 -- ----------------------------
 -- Records of tb_user

@@ -77,13 +77,14 @@ public class Scheduler {
 	 * @version V1.0
 	 *
 	 */
-	@Scheduled(fixedDelay = 3600000) // 完成后的每60分钟执行一次,清空
+	@Scheduled(fixedDelay = 36000000) // 完成后的每600分钟执行一次,清空
 	public void checkSize() {
-		log.info("每小时执行一次。开始……");
+		log.info("开始……");
 		int size = map.size();
 		if (size > 1000) {
+			log.info("大于1000，清空");
 			map.clear();
 		}
-		log.info("每小时执行一次。结束……");
+		log.info("结束……");
 	}
 }

@@ -27,7 +27,7 @@
             <div class="col-sm-12">
                 <div class="ibox ">
                     <div class="ibox-title">
-                        <h5>操作记录</h5>
+                        <h5>备忘记录</h5>
                     </div>
                     <div class="ibox-content">
                         <div class="row row-lg">
@@ -139,7 +139,7 @@
         		$.ajax({
     	    		   type: "POST",
     	    		   dataType: "json",
-    	    		   url: "${ctx!}/admin/role/delete/" + id,
+    	    		   url: "${ctx!}/admin/memorandum/delete/" + id,
     	    		   success: function(msg){
 	 	   	    			layer.msg(msg.message, {time: 2000},function(){
 	 	   	    				$('#table_list').bootstrapTable("refresh");

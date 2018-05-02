@@ -102,7 +102,7 @@
    <!-- 粗略控制 -->
       <@shiro.hasPermission name="system:memorandum:memorandum">
         <li>
-            <a class="J_menuItem" href="${ctx!}/admin/memorandum/index"><i class="fa fa-cogs" aria-hidden="true"></i>系统操作备忘</a>
+            <a class="J_menuItem" href="${ctx!}/admin/memorandum/index"><i class="fa fa-sticky-note" aria-hidden="true"></i>备忘记录</a>
         </li>
     </@shiro.hasPermission>
     </ul>

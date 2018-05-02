@@ -81,6 +81,7 @@ public class MemorandumController extends BaseController {
 	public JsonResult delete(@PathVariable Integer id, ModelMap map) {
 		try {
 			memorandumService.delete(id);
+			log.info("删除：{}成功",id);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return JsonResult.failure(e.getMessage());
