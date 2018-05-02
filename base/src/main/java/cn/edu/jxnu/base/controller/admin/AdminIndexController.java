@@ -192,6 +192,18 @@ public class AdminIndexController extends BaseController {
 	public JsonResult allCanUpdate(User user, ModelMap map) throws ServletException, IOException {
 		log.info("user:/assets/update:" + user.toString());
 		try {
+			User u = (User) SecurityUtils.getSubject().getSession().getAttribute(Constats.CURRENTUSER + user.getId());
+			if (u == null) {
+				// 已经过期
+				try {
+					throw new TimeoutException("因超时无法获取您的个人信息,即将退出登录");
+				} catch (TimeoutException e) {
+					map.put("message", e.getMessage());
+				} finally {
+					// 重定向到登录页面
+					redirect(response, "/admin/logout");
+				}
+			}
 			userService.saveOrUpdate(user);
 			// 更新session
 			SecurityUtils.getSubject().getSession().setAttribute(Constats.CURRENTUSER + user.getId(), user);
