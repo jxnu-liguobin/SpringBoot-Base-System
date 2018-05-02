@@ -1,0 +1,1834 @@
+2018-04-12 00:04:16.022 [Thread-94] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用关闭
+2018-04-12 00:04:16.038 [Thread-94] DEBUG druid.sql.Connection
+				- {conn-2110001} closed
+2018-04-12 00:04:16.039 [Thread-94] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-22} closed
+2018-04-12 00:04:16.039 [Thread-94] DEBUG druid.sql.Connection
+				- {conn-2010001} closed
+2018-04-12 00:04:16.040 [Thread-94] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-21} closed
+2018-04-12 00:04:16.360 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量
+2018-04-12 00:04:16.466 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Starting Application on MrLi-PC with PID 7824 (G:\gitt\SpringBoot-Base-System\base\target\classes started by Mr.Li in G:\gitt\SpringBoot-Base-System\base)
+2018-04-12 00:04:16.466 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-12 00:04:16.466 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- No active profile set, falling back to default profiles: default
+2018-04-12 00:04:16.470 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量完成
+2018-04-12 00:04:17.409 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory
+				- Configuring ehcache from InputStream
+2018-04-12 00:04:17.411 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xmlns:xsi
+2018-04-12 00:04:17.411 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2018-04-12 00:04:17.412 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration
+				- Disk Store Path: C:\Users\Mr.Li\AppData\Local\Temp\
+2018-04-12 00:04:17.414 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil
+				- propertiesString is null.
+2018-04-12 00:04:17.415 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheManagerEventListenerFactory class specified. Skipping...
+2018-04-12 00:04:17.418 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:04:17.418 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:04:17.418 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:04:17.419 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:04:17.419 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:04:17.419 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:04:17.420 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:04:17.420 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:04:17.420 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:04:17.420 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration
+				- Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2018-04-12 00:04:17.421 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Using diskstore path C:\Users\Mr.Li\AppData\Local\Temp
+2018-04-12 00:04:17.421 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Holding exclusive lock on C:\Users\Mr.Li\AppData\Local\Temp\.ehcache-diskstore.lock
+2018-04-12 00:04:17.422 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.data
+2018-04-12 00:04:17.422 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:04:17.422 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Matching data file missing (or empty) for index file. Deleting index file C:\Users\Mr.Li\AppData\Local\Temp\resource%0043ache.index
+2018-04-12 00:04:17.423 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:04:17.427 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:04:17.427 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:04:17.427 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:04:17.427 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:04:17.427 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:04:17.428 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:04:17.428 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:04:17.428 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:04:17.429 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:04:17.429 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:04:17.429 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:04:17.429 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:04:17.429 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:04:17.430 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: resourceCache
+2018-04-12 00:04:17.431 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2018-04-12 00:04:17.431 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2018-04-12 00:04:17.432 [restartedMain] DEBUG net.sf.ehcache.store.MemoryStore
+				- Initialized net.sf.ehcache.store.MemoryStore for passwordRetryCache
+2018-04-12 00:04:17.432 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:04:17.432 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:04:17.432 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+2018-04-12 00:04:17.433 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+2018-04-12 00:04:17.433 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:04:17.433 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:04:17.433 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:04:17.434 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:04:17.434 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:04:17.434 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:04:17.435 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_GET
+2018-04-12 00:04:17.435 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_PUT
+2018-04-12 00:04:17.435 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_REMOVE
+2018-04-12 00:04:17.435 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:04:17.435 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:04:17.435 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:04:17.436 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:04:17.436 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:04:17.438 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: passwordRetryCache
+2018-04-12 00:04:17.438 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'passwordRetryCache'.
+2018-04-12 00:04:17.438 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'passwordRetryCache'.
+2018-04-12 00:04:17.534 [restartedMain] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 生成passwordRetryCache
+2018-04-12 00:04:18.038 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-23} inited
+2018-04-12 00:04:18.044 [Druid-ConnectionPool-Create-19046826] DEBUG druid.sql.Connection
+				- {conn-2210001} connected
+2018-04-12 00:04:18.045 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:18.046 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:18.120 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:18.124 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:18.150 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:18.150 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:18.150 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:18.150 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:18.150 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:18.150 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:18.176 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:19.206 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:19.567 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-24} inited
+2018-04-12 00:04:19.571 [Druid-ConnectionPool-Create-6769357] DEBUG druid.sql.Connection
+				- {conn-2310001} connected
+2018-04-12 00:04:19.572 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-connect
+2018-04-12 00:04:19.577 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-recycle
+2018-04-12 00:04:19.601 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-connect
+2018-04-12 00:04:19.601 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-recycle
+2018-04-12 00:04:19.602 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-connect
+2018-04-12 00:04:19.602 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-recycle
+2018-04-12 00:04:19.602 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-connect
+2018-04-12 00:04:19.602 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-recycle
+2018-04-12 00:04:19.617 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-connect
+2018-04-12 00:04:20.805 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2310001} pool-recycle
+2018-04-12 00:04:21.599 [restartedMain] INFO  org.apache.catalina.core.StandardService
+				- Starting service [Tomcat]
+2018-04-12 00:04:21.599 [restartedMain] INFO  org.apache.catalina.core.StandardEngine
+				- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-12 00:04:21.620 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring embedded WebApplicationContext
+2018-04-12 00:04:21.928 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.RedisConfig
+				- redisTemplate:org.springframework.data.redis.core.RedisTemplate@559037
+2018-04-12 00:04:22.008 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 开始初始化redis数据->base:0
+2018-04-12 00:04:22.028 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-connect
+2018-04-12 00:04:22.028 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2210001} setAutoCommit false
+2018-04-12 00:04:22.033 [localhost-startStop-1] DEBUG org.hibernate.SQL
+				- select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:04:22.033 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2210001, pstmt-2220000} created. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:04:22.034 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2210001, pstmt-2220000} Parameters : []
+2018-04-12 00:04:22.034 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2210001, pstmt-2220000} Types : []
+2018-04-12 00:04:22.035 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2210001, pstmt-2220000, rs-2250000} query executed. 0.796803 millis. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:04:22.035 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2210001, pstmt-2220000, rs-2250000} open
+2018-04-12 00:04:22.035 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2210001, pstmt-2220000, rs-2250000} Header: [user_id, book_id, book_author, book_name, book_press, update_time]
+2018-04-12 00:04:22.035 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2210001, pstmt-2220000, rs-2250000} closed
+2018-04-12 00:04:22.035 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2210001, pstmt-2220000} closed
+2018-04-12 00:04:22.036 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2210001} commited
+2018-04-12 00:04:22.036 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2210001} setAutoCommit true
+2018-04-12 00:04:22.036 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2210001} pool-recycle
+2018-04-12 00:04:22.037 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 初始化redis数据完毕->base:0
+2018-04-12 00:04:24.255 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用刷新
+2018-04-12 00:04:24.261 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:04:24.261 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Starting ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:04:24.264 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool
+				- Using a shared selector for servlet write/read
+2018-04-12 00:04:24.274 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用已启动完成
+2018-04-12 00:04:24.274 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Started Application in 7.977 seconds (JVM running for 1077.774)
+2018-04-12 00:04:24.274 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- 启动成功
+2018-04-12 00:04:35.494 [Thread-103] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用关闭
+2018-04-12 00:04:35.502 [Thread-103] DEBUG druid.sql.Connection
+				- {conn-2310001} closed
+2018-04-12 00:04:35.503 [Thread-103] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-24} closed
+2018-04-12 00:04:35.504 [Thread-103] DEBUG druid.sql.Connection
+				- {conn-2210001} closed
+2018-04-12 00:04:35.504 [Thread-103] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-23} closed
+2018-04-12 00:04:35.849 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量
+2018-04-12 00:04:35.856 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Starting Application on MrLi-PC with PID 7824 (G:\gitt\SpringBoot-Base-System\base\target\classes started by Mr.Li in G:\gitt\SpringBoot-Base-System\base)
+2018-04-12 00:04:35.856 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-12 00:04:35.856 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- No active profile set, falling back to default profiles: default
+2018-04-12 00:04:35.859 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量完成
+2018-04-12 00:04:36.808 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory
+				- Configuring ehcache from InputStream
+2018-04-12 00:04:36.812 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xmlns:xsi
+2018-04-12 00:04:36.812 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2018-04-12 00:04:36.812 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration
+				- Disk Store Path: C:\Users\Mr.Li\AppData\Local\Temp\
+2018-04-12 00:04:36.815 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil
+				- propertiesString is null.
+2018-04-12 00:04:36.816 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheManagerEventListenerFactory class specified. Skipping...
+2018-04-12 00:04:36.819 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:04:36.819 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:04:36.819 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:04:36.820 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:04:36.821 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:04:36.821 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:04:36.822 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:04:36.822 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:04:36.822 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:04:36.824 [restartedMain] DEBUG net.sf.ehcache.store.MemoryStore
+				- Initialized net.sf.ehcache.store.MemoryStore for passwordRetryCache
+2018-04-12 00:04:36.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:04:36.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:04:36.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+2018-04-12 00:04:36.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+2018-04-12 00:04:36.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:04:36.825 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:04:36.826 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:04:36.827 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:04:36.827 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:04:36.828 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:04:36.828 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_GET
+2018-04-12 00:04:36.828 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_PUT
+2018-04-12 00:04:36.828 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_REMOVE
+2018-04-12 00:04:36.828 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:04:36.829 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:04:36.829 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:04:36.829 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:04:36.829 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:04:36.831 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: passwordRetryCache
+2018-04-12 00:04:36.831 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'passwordRetryCache'.
+2018-04-12 00:04:36.831 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'passwordRetryCache'.
+2018-04-12 00:04:36.831 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration
+				- Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2018-04-12 00:04:36.832 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Using diskstore path C:\Users\Mr.Li\AppData\Local\Temp
+2018-04-12 00:04:36.833 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Holding exclusive lock on C:\Users\Mr.Li\AppData\Local\Temp\.ehcache-diskstore.lock
+2018-04-12 00:04:36.833 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.data
+2018-04-12 00:04:36.833 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:04:36.834 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Matching data file missing (or empty) for index file. Deleting index file C:\Users\Mr.Li\AppData\Local\Temp\resource%0043ache.index
+2018-04-12 00:04:36.834 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:04:36.836 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:04:36.836 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:04:36.837 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:04:36.837 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:04:36.837 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:04:36.838 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:04:36.838 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:04:36.838 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:04:36.839 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:04:36.839 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:04:36.839 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:04:36.840 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:04:36.840 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:04:36.841 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: resourceCache
+2018-04-12 00:04:36.841 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2018-04-12 00:04:36.841 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2018-04-12 00:04:36.935 [restartedMain] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 生成passwordRetryCache
+2018-04-12 00:04:37.437 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-25} inited
+2018-04-12 00:04:37.442 [Druid-ConnectionPool-Create-2931615] DEBUG druid.sql.Connection
+				- {conn-2410001} connected
+2018-04-12 00:04:37.444 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:37.444 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:37.523 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:37.536 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:37.570 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:37.570 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:37.570 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:37.570 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:37.571 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:37.571 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:37.612 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:38.728 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:39.079 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-26} inited
+2018-04-12 00:04:39.083 [Druid-ConnectionPool-Create-26878813] DEBUG druid.sql.Connection
+				- {conn-2510001} connected
+2018-04-12 00:04:39.084 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-connect
+2018-04-12 00:04:39.094 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-recycle
+2018-04-12 00:04:39.122 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-connect
+2018-04-12 00:04:39.123 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-recycle
+2018-04-12 00:04:39.123 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-connect
+2018-04-12 00:04:39.123 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-recycle
+2018-04-12 00:04:39.123 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-connect
+2018-04-12 00:04:39.123 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-recycle
+2018-04-12 00:04:39.141 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-connect
+2018-04-12 00:04:40.270 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2510001} pool-recycle
+2018-04-12 00:04:41.065 [restartedMain] INFO  org.apache.catalina.core.StandardService
+				- Starting service [Tomcat]
+2018-04-12 00:04:41.066 [restartedMain] INFO  org.apache.catalina.core.StandardEngine
+				- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-12 00:04:41.088 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring embedded WebApplicationContext
+2018-04-12 00:04:41.370 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.RedisConfig
+				- redisTemplate:org.springframework.data.redis.core.RedisTemplate@6950f6
+2018-04-12 00:04:41.441 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 开始初始化redis数据->base:0
+2018-04-12 00:04:41.455 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-connect
+2018-04-12 00:04:41.455 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2410001} setAutoCommit false
+2018-04-12 00:04:41.459 [localhost-startStop-1] DEBUG org.hibernate.SQL
+				- select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:04:41.460 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2410001, pstmt-2420000} created. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:04:41.460 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2410001, pstmt-2420000} Parameters : []
+2018-04-12 00:04:41.460 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2410001, pstmt-2420000} Types : []
+2018-04-12 00:04:41.461 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2410001, pstmt-2420000, rs-2450000} query executed. 0.614863 millis. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:04:41.461 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2410001, pstmt-2420000, rs-2450000} open
+2018-04-12 00:04:41.461 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2410001, pstmt-2420000, rs-2450000} Header: [user_id, book_id, book_author, book_name, book_press, update_time]
+2018-04-12 00:04:41.461 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2410001, pstmt-2420000, rs-2450000} closed
+2018-04-12 00:04:41.461 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2410001, pstmt-2420000} closed
+2018-04-12 00:04:41.462 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2410001} commited
+2018-04-12 00:04:41.462 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2410001} setAutoCommit true
+2018-04-12 00:04:41.463 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2410001} pool-recycle
+2018-04-12 00:04:41.463 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 初始化redis数据完毕->base:0
+2018-04-12 00:04:43.510 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用刷新
+2018-04-12 00:04:43.515 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:04:43.515 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Starting ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:04:43.518 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool
+				- Using a shared selector for servlet write/read
+2018-04-12 00:04:43.526 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用已启动完成
+2018-04-12 00:04:43.526 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Started Application in 7.749 seconds (JVM running for 1097.027)
+2018-04-12 00:04:43.527 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- 启动成功
+2018-04-12 00:07:08.144 [Thread-112] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用关闭
+2018-04-12 00:07:08.148 [Thread-112] DEBUG druid.sql.Connection
+				- {conn-2510001} closed
+2018-04-12 00:07:08.149 [Thread-112] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-26} closed
+2018-04-12 00:07:08.150 [Thread-112] DEBUG druid.sql.Connection
+				- {conn-2410001} closed
+2018-04-12 00:07:08.150 [Thread-112] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-25} closed
+2018-04-12 00:07:08.490 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量
+2018-04-12 00:07:08.496 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Starting Application on MrLi-PC with PID 7824 (G:\gitt\SpringBoot-Base-System\base\target\classes started by Mr.Li in G:\gitt\SpringBoot-Base-System\base)
+2018-04-12 00:07:08.496 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-12 00:07:08.496 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- No active profile set, falling back to default profiles: default
+2018-04-12 00:07:08.500 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量完成
+2018-04-12 00:07:09.399 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory
+				- Configuring ehcache from InputStream
+2018-04-12 00:07:09.400 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xmlns:xsi
+2018-04-12 00:07:09.401 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2018-04-12 00:07:09.401 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration
+				- Disk Store Path: C:\Users\Mr.Li\AppData\Local\Temp\
+2018-04-12 00:07:09.403 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil
+				- propertiesString is null.
+2018-04-12 00:07:09.403 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheManagerEventListenerFactory class specified. Skipping...
+2018-04-12 00:07:09.407 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:07:09.407 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:07:09.408 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:07:09.409 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:07:09.409 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:07:09.409 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:07:09.410 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:07:09.410 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:07:09.410 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:07:09.410 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration
+				- Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2018-04-12 00:07:09.412 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Using diskstore path C:\Users\Mr.Li\AppData\Local\Temp
+2018-04-12 00:07:09.412 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Holding exclusive lock on C:\Users\Mr.Li\AppData\Local\Temp\.ehcache-diskstore.lock
+2018-04-12 00:07:09.412 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.data
+2018-04-12 00:07:09.413 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:07:09.413 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Matching data file missing (or empty) for index file. Deleting index file C:\Users\Mr.Li\AppData\Local\Temp\resource%0043ache.index
+2018-04-12 00:07:09.414 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:07:09.417 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:07:09.417 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:07:09.417 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:07:09.418 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:07:09.418 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:07:09.418 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:07:09.419 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:07:09.419 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:07:09.419 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:07:09.420 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:07:09.420 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:07:09.420 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:07:09.420 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:07:09.421 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: resourceCache
+2018-04-12 00:07:09.421 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2018-04-12 00:07:09.421 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2018-04-12 00:07:09.423 [restartedMain] DEBUG net.sf.ehcache.store.MemoryStore
+				- Initialized net.sf.ehcache.store.MemoryStore for passwordRetryCache
+2018-04-12 00:07:09.423 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:07:09.423 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:07:09.423 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+2018-04-12 00:07:09.423 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+2018-04-12 00:07:09.423 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:07:09.424 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:07:09.424 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:07:09.424 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:07:09.424 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:07:09.424 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:07:09.424 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_GET
+2018-04-12 00:07:09.425 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_PUT
+2018-04-12 00:07:09.425 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_REMOVE
+2018-04-12 00:07:09.425 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:07:09.425 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:07:09.425 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:07:09.425 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:07:09.426 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:07:09.427 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: passwordRetryCache
+2018-04-12 00:07:09.427 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'passwordRetryCache'.
+2018-04-12 00:07:09.427 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'passwordRetryCache'.
+2018-04-12 00:07:09.531 [restartedMain] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 生成passwordRetryCache
+2018-04-12 00:07:10.034 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-27} inited
+2018-04-12 00:07:10.039 [Druid-ConnectionPool-Create-19735300] DEBUG druid.sql.Connection
+				- {conn-2610001} connected
+2018-04-12 00:07:10.041 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:10.042 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:10.120 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:10.125 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:10.152 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:10.152 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:10.152 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:10.153 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:10.153 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:10.153 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:10.181 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:11.194 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:11.568 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-28} inited
+2018-04-12 00:07:11.572 [Druid-ConnectionPool-Create-22013772] DEBUG druid.sql.Connection
+				- {conn-2710001} connected
+2018-04-12 00:07:11.573 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-connect
+2018-04-12 00:07:11.577 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-recycle
+2018-04-12 00:07:11.598 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-connect
+2018-04-12 00:07:11.598 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-recycle
+2018-04-12 00:07:11.598 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-connect
+2018-04-12 00:07:11.598 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-recycle
+2018-04-12 00:07:11.598 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-connect
+2018-04-12 00:07:11.598 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-recycle
+2018-04-12 00:07:11.613 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-connect
+2018-04-12 00:07:12.702 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2710001} pool-recycle
+2018-04-12 00:07:13.564 [restartedMain] INFO  org.apache.catalina.core.StandardService
+				- Starting service [Tomcat]
+2018-04-12 00:07:13.564 [restartedMain] INFO  org.apache.catalina.core.StandardEngine
+				- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-12 00:07:13.596 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring embedded WebApplicationContext
+2018-04-12 00:07:13.934 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.RedisConfig
+				- redisTemplate:org.springframework.data.redis.core.RedisTemplate@1d7a5d9
+2018-04-12 00:07:14.010 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 开始初始化redis数据->base:0
+2018-04-12 00:07:14.024 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-connect
+2018-04-12 00:07:14.024 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2610001} setAutoCommit false
+2018-04-12 00:07:14.028 [localhost-startStop-1] DEBUG org.hibernate.SQL
+				- select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:07:14.029 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2610001, pstmt-2620000} created. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:07:14.029 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2610001, pstmt-2620000} Parameters : []
+2018-04-12 00:07:14.029 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2610001, pstmt-2620000} Types : []
+2018-04-12 00:07:14.030 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2610001, pstmt-2620000, rs-2650000} query executed. 0.561371 millis. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:07:14.030 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2610001, pstmt-2620000, rs-2650000} open
+2018-04-12 00:07:14.030 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2610001, pstmt-2620000, rs-2650000} Header: [user_id, book_id, book_author, book_name, book_press, update_time]
+2018-04-12 00:07:14.031 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2610001, pstmt-2620000, rs-2650000} closed
+2018-04-12 00:07:14.031 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2610001, pstmt-2620000} closed
+2018-04-12 00:07:14.032 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2610001} commited
+2018-04-12 00:07:14.032 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2610001} setAutoCommit true
+2018-04-12 00:07:14.032 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2610001} pool-recycle
+2018-04-12 00:07:14.032 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 初始化redis数据完毕->base:0
+2018-04-12 00:07:16.174 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用刷新
+2018-04-12 00:07:16.177 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:07:16.178 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Starting ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:07:16.180 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool
+				- Using a shared selector for servlet write/read
+2018-04-12 00:07:16.191 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用已启动完成
+2018-04-12 00:07:16.191 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Started Application in 7.765 seconds (JVM running for 1249.691)
+2018-04-12 00:07:16.191 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- 启动成功
+2018-04-12 00:07:19.842 [Thread-121] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用关闭
+2018-04-12 00:07:19.847 [Thread-121] DEBUG druid.sql.Connection
+				- {conn-2710001} closed
+2018-04-12 00:07:19.847 [Thread-121] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-28} closed
+2018-04-12 00:07:19.848 [Thread-121] DEBUG druid.sql.Connection
+				- {conn-2610001} closed
+2018-04-12 00:07:19.848 [Thread-121] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-27} closed
+2018-04-12 00:07:20.189 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量
+2018-04-12 00:07:20.195 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Starting Application on MrLi-PC with PID 7824 (G:\gitt\SpringBoot-Base-System\base\target\classes started by Mr.Li in G:\gitt\SpringBoot-Base-System\base)
+2018-04-12 00:07:20.196 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-12 00:07:20.196 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- No active profile set, falling back to default profiles: default
+2018-04-12 00:07:20.198 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量完成
+2018-04-12 00:07:21.118 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory
+				- Configuring ehcache from InputStream
+2018-04-12 00:07:21.120 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xmlns:xsi
+2018-04-12 00:07:21.120 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2018-04-12 00:07:21.120 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration
+				- Disk Store Path: C:\Users\Mr.Li\AppData\Local\Temp\
+2018-04-12 00:07:21.121 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil
+				- propertiesString is null.
+2018-04-12 00:07:21.122 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheManagerEventListenerFactory class specified. Skipping...
+2018-04-12 00:07:21.131 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:07:21.131 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:07:21.131 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:07:21.132 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:07:21.132 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:07:21.132 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:07:21.133 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:07:21.133 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:07:21.133 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:07:21.134 [restartedMain] DEBUG net.sf.ehcache.store.MemoryStore
+				- Initialized net.sf.ehcache.store.MemoryStore for passwordRetryCache
+2018-04-12 00:07:21.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:07:21.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:07:21.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+2018-04-12 00:07:21.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+2018-04-12 00:07:21.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:07:21.136 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:07:21.136 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:07:21.136 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_GET
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_PUT
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_REMOVE
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:07:21.137 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:07:21.138 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:07:21.138 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:07:21.138 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:07:21.139 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: passwordRetryCache
+2018-04-12 00:07:21.139 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'passwordRetryCache'.
+2018-04-12 00:07:21.139 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'passwordRetryCache'.
+2018-04-12 00:07:21.139 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration
+				- Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2018-04-12 00:07:21.140 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Using diskstore path C:\Users\Mr.Li\AppData\Local\Temp
+2018-04-12 00:07:21.141 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Holding exclusive lock on C:\Users\Mr.Li\AppData\Local\Temp\.ehcache-diskstore.lock
+2018-04-12 00:07:21.141 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.data
+2018-04-12 00:07:21.141 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:07:21.142 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Matching data file missing (or empty) for index file. Deleting index file C:\Users\Mr.Li\AppData\Local\Temp\resource%0043ache.index
+2018-04-12 00:07:21.142 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:07:21.144 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:07:21.144 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:07:21.144 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:07:21.144 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:07:21.145 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:07:21.145 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:07:21.145 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:07:21.146 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:07:21.146 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:07:21.146 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:07:21.146 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:07:21.147 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:07:21.147 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:07:21.148 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: resourceCache
+2018-04-12 00:07:21.148 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2018-04-12 00:07:21.148 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2018-04-12 00:07:21.236 [restartedMain] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 生成passwordRetryCache
+2018-04-12 00:07:21.698 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-29} inited
+2018-04-12 00:07:21.703 [Druid-ConnectionPool-Create-13258916] DEBUG druid.sql.Connection
+				- {conn-2810001} connected
+2018-04-12 00:07:21.704 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:21.705 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:21.785 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:21.789 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:21.813 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:21.814 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:21.814 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:21.814 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:21.814 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:21.814 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:21.842 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:22.938 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:23.304 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-30} inited
+2018-04-12 00:07:23.308 [Druid-ConnectionPool-Create-9198085] DEBUG druid.sql.Connection
+				- {conn-2910001} connected
+2018-04-12 00:07:23.308 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-connect
+2018-04-12 00:07:23.312 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-recycle
+2018-04-12 00:07:23.333 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-connect
+2018-04-12 00:07:23.333 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-recycle
+2018-04-12 00:07:23.333 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-connect
+2018-04-12 00:07:23.333 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-recycle
+2018-04-12 00:07:23.333 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-connect
+2018-04-12 00:07:23.333 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-recycle
+2018-04-12 00:07:23.358 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-connect
+2018-04-12 00:07:24.412 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-2910001} pool-recycle
+2018-04-12 00:07:25.222 [restartedMain] INFO  org.apache.catalina.core.StandardService
+				- Starting service [Tomcat]
+2018-04-12 00:07:25.222 [restartedMain] INFO  org.apache.catalina.core.StandardEngine
+				- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-12 00:07:25.243 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring embedded WebApplicationContext
+2018-04-12 00:07:25.551 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.RedisConfig
+				- redisTemplate:org.springframework.data.redis.core.RedisTemplate@85fb02
+2018-04-12 00:07:25.623 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 开始初始化redis数据->base:0
+2018-04-12 00:07:25.649 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-connect
+2018-04-12 00:07:25.649 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2810001} setAutoCommit false
+2018-04-12 00:07:25.655 [localhost-startStop-1] DEBUG org.hibernate.SQL
+				- select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:07:25.656 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2810001, pstmt-2820000} created. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:07:25.656 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2810001, pstmt-2820000} Parameters : []
+2018-04-12 00:07:25.656 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2810001, pstmt-2820000} Types : []
+2018-04-12 00:07:25.656 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2810001, pstmt-2820000, rs-2850000} query executed. 0.567279 millis. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:07:25.657 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2810001, pstmt-2820000, rs-2850000} open
+2018-04-12 00:07:25.657 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2810001, pstmt-2820000, rs-2850000} Header: [user_id, book_id, book_author, book_name, book_press, update_time]
+2018-04-12 00:07:25.657 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-2810001, pstmt-2820000, rs-2850000} closed
+2018-04-12 00:07:25.657 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-2810001, pstmt-2820000} closed
+2018-04-12 00:07:25.658 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2810001} commited
+2018-04-12 00:07:25.658 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2810001} setAutoCommit true
+2018-04-12 00:07:25.659 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-2810001} pool-recycle
+2018-04-12 00:07:25.659 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 初始化redis数据完毕->base:0
+2018-04-12 00:07:27.807 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用刷新
+2018-04-12 00:07:27.811 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:07:27.811 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Starting ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:07:27.814 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool
+				- Using a shared selector for servlet write/read
+2018-04-12 00:07:27.832 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用已启动完成
+2018-04-12 00:07:27.832 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Started Application in 7.708 seconds (JVM running for 1261.333)
+2018-04-12 00:07:27.832 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- 启动成功
+2018-04-12 00:08:20.323 [Thread-130] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用关闭
+2018-04-12 00:08:20.331 [Thread-130] DEBUG druid.sql.Connection
+				- {conn-2910001} closed
+2018-04-12 00:08:20.332 [Thread-130] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-30} closed
+2018-04-12 00:08:20.334 [Thread-130] DEBUG druid.sql.Connection
+				- {conn-2810001} closed
+2018-04-12 00:08:20.334 [Thread-130] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-29} closed
+2018-04-12 00:08:20.717 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量
+2018-04-12 00:08:20.723 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Starting Application on MrLi-PC with PID 7824 (G:\gitt\SpringBoot-Base-System\base\target\classes started by Mr.Li in G:\gitt\SpringBoot-Base-System\base)
+2018-04-12 00:08:20.723 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-12 00:08:20.723 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- No active profile set, falling back to default profiles: default
+2018-04-12 00:08:20.727 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量完成
+2018-04-12 00:08:21.655 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory
+				- Configuring ehcache from InputStream
+2018-04-12 00:08:21.667 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xmlns:xsi
+2018-04-12 00:08:21.667 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2018-04-12 00:08:21.668 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration
+				- Disk Store Path: C:\Users\Mr.Li\AppData\Local\Temp\
+2018-04-12 00:08:21.670 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil
+				- propertiesString is null.
+2018-04-12 00:08:21.672 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheManagerEventListenerFactory class specified. Skipping...
+2018-04-12 00:08:21.677 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:08:21.677 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:08:21.677 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:08:21.679 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:08:21.679 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:08:21.679 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:08:21.680 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:08:21.680 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:08:21.680 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:08:21.682 [restartedMain] DEBUG net.sf.ehcache.store.MemoryStore
+				- Initialized net.sf.ehcache.store.MemoryStore for passwordRetryCache
+2018-04-12 00:08:21.684 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:08:21.684 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:08:21.684 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+2018-04-12 00:08:21.684 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+2018-04-12 00:08:21.685 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:08:21.685 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:08:21.685 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:08:21.686 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:08:21.687 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:08:21.687 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:08:21.687 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_GET
+2018-04-12 00:08:21.687 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_PUT
+2018-04-12 00:08:21.687 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_REMOVE
+2018-04-12 00:08:21.688 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:08:21.688 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:08:21.688 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:08:21.688 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:08:21.689 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:08:21.690 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: passwordRetryCache
+2018-04-12 00:08:21.690 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'passwordRetryCache'.
+2018-04-12 00:08:21.690 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'passwordRetryCache'.
+2018-04-12 00:08:21.691 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration
+				- Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2018-04-12 00:08:21.692 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Using diskstore path C:\Users\Mr.Li\AppData\Local\Temp
+2018-04-12 00:08:21.692 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Holding exclusive lock on C:\Users\Mr.Li\AppData\Local\Temp\.ehcache-diskstore.lock
+2018-04-12 00:08:21.692 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.data
+2018-04-12 00:08:21.693 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:08:21.693 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Matching data file missing (or empty) for index file. Deleting index file C:\Users\Mr.Li\AppData\Local\Temp\resource%0043ache.index
+2018-04-12 00:08:21.694 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:08:21.697 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:08:21.697 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:08:21.697 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:08:21.698 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:08:21.698 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:08:21.698 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:08:21.699 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:08:21.699 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:08:21.699 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:08:21.700 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:08:21.700 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:08:21.700 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:08:21.700 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:08:21.702 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: resourceCache
+2018-04-12 00:08:21.702 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2018-04-12 00:08:21.702 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2018-04-12 00:08:21.797 [restartedMain] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 生成passwordRetryCache
+2018-04-12 00:08:22.292 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-31} inited
+2018-04-12 00:08:22.298 [Druid-ConnectionPool-Create-14767356] DEBUG druid.sql.Connection
+				- {conn-3010001} connected
+2018-04-12 00:08:22.300 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:22.301 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:22.391 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:22.408 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:22.442 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:22.442 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:22.442 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:22.442 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:22.442 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:22.478 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:23.536 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:23.901 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-32} inited
+2018-04-12 00:08:23.905 [Druid-ConnectionPool-Create-31336719] DEBUG druid.sql.Connection
+				- {conn-3110001} connected
+2018-04-12 00:08:23.906 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-connect
+2018-04-12 00:08:23.910 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-recycle
+2018-04-12 00:08:23.945 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-connect
+2018-04-12 00:08:23.945 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-recycle
+2018-04-12 00:08:23.945 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-connect
+2018-04-12 00:08:23.945 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-recycle
+2018-04-12 00:08:23.945 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-connect
+2018-04-12 00:08:23.945 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-recycle
+2018-04-12 00:08:23.961 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-connect
+2018-04-12 00:08:25.071 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3110001} pool-recycle
+2018-04-12 00:08:25.921 [restartedMain] INFO  org.apache.catalina.core.StandardService
+				- Starting service [Tomcat]
+2018-04-12 00:08:25.921 [restartedMain] INFO  org.apache.catalina.core.StandardEngine
+				- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-12 00:08:25.943 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring embedded WebApplicationContext
+2018-04-12 00:08:26.256 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.RedisConfig
+				- redisTemplate:org.springframework.data.redis.core.RedisTemplate@35e44c
+2018-04-12 00:08:26.333 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 开始初始化redis数据->base:0
+2018-04-12 00:08:26.349 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:08:26.349 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:08:26.354 [localhost-startStop-1] DEBUG org.hibernate.SQL
+				- select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:08:26.355 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020000} created. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:08:26.355 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020000} Parameters : []
+2018-04-12 00:08:26.355 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020000} Types : []
+2018-04-12 00:08:26.356 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020000, rs-3050000} query executed. 0.63508 millis. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:08:26.356 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020000, rs-3050000} open
+2018-04-12 00:08:26.356 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020000, rs-3050000} Header: [user_id, book_id, book_author, book_name, book_press, update_time]
+2018-04-12 00:08:26.356 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020000, rs-3050000} closed
+2018-04-12 00:08:26.356 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020000} closed
+2018-04-12 00:08:26.357 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:08:26.357 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:08:26.358 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:08:26.358 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 初始化redis数据完毕->base:0
+2018-04-12 00:08:28.591 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用刷新
+2018-04-12 00:08:28.596 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:08:28.596 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Starting ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:08:28.598 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool
+				- Using a shared selector for servlet write/read
+2018-04-12 00:08:28.608 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用已启动完成
+2018-04-12 00:08:28.608 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Started Application in 7.96 seconds (JVM running for 1322.108)
+2018-04-12 00:08:28.608 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- 启动成功
+2018-04-12 00:09:13.916 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-12 00:09:13.936 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:09:13.936 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:13.936 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:09:13.940 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:13.941 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020001} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:13.942 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020001} Parameters : [admin]
+2018-04-12 00:09:13.942 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020001} Types : [VARCHAR]
+2018-04-12 00:09:13.942 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020001, rs-3050001} query executed. 0.655295 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:13.942 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020001, rs-3050001} open
+2018-04-12 00:09:13.943 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020001, rs-3050001} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:09:13.943 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020001, rs-3050001} Result: [1, 2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-11 23:54:51.0, admin, admin]
+2018-04-12 00:09:13.943 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020001, rs-3050001} closed
+2018-04-12 00:09:13.944 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020001} closed
+2018-04-12 00:09:13.944 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:13.944 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:13.945 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 用户：admin已经进入限制缓存  第1次登录尝试
+2018-04-12 00:09:14.003 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:09:26.419 [http-nio-8080-exec-10] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:09:26.419 [http-nio-8080-exec-10] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:26.420 [http-nio-8080-exec-10] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:09:26.421 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:26.421 [http-nio-8080-exec-10] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020002} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:26.421 [http-nio-8080-exec-10] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020002} Parameters : [admin]
+2018-04-12 00:09:26.422 [http-nio-8080-exec-10] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020002} Types : [VARCHAR]
+2018-04-12 00:09:26.422 [http-nio-8080-exec-10] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020002, rs-3050002} query executed. 0.62917 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:26.422 [http-nio-8080-exec-10] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020002, rs-3050002} open
+2018-04-12 00:09:26.422 [http-nio-8080-exec-10] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020002, rs-3050002} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:09:26.423 [http-nio-8080-exec-10] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020002, rs-3050002} Result: [1, 2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-11 23:54:51.0, admin, admin]
+2018-04-12 00:09:26.423 [http-nio-8080-exec-10] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020002, rs-3050002} closed
+2018-04-12 00:09:26.424 [http-nio-8080-exec-10] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020002} closed
+2018-04-12 00:09:26.424 [http-nio-8080-exec-10] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:26.424 [http-nio-8080-exec-10] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:26.428 [http-nio-8080-exec-10] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:09:37.467 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:09:37.467 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:37.467 [http-nio-8080-exec-6] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:09:37.468 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:37.468 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020003} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:37.468 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020003} Parameters : [admin]
+2018-04-12 00:09:37.468 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020003} Types : [VARCHAR]
+2018-04-12 00:09:37.469 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020003, rs-3050003} query executed. 0.487039 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:37.469 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020003, rs-3050003} open
+2018-04-12 00:09:37.469 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020003, rs-3050003} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:09:37.469 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020003, rs-3050003} Result: [1, 2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-11 23:54:51.0, admin, admin]
+2018-04-12 00:09:37.470 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020003, rs-3050003} closed
+2018-04-12 00:09:37.470 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020003} closed
+2018-04-12 00:09:37.470 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:37.470 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:37.474 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:09:39.394 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:09:39.394 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:39.395 [http-nio-8080-exec-6] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:09:39.395 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:39.395 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020004} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:39.396 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020004} Parameters : [admin]
+2018-04-12 00:09:39.396 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020004} Types : [VARCHAR]
+2018-04-12 00:09:39.396 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020004, rs-3050004} query executed. 0.571945 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:39.396 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020004, rs-3050004} open
+2018-04-12 00:09:39.397 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020004, rs-3050004} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:09:39.397 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020004, rs-3050004} Result: [1, 2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-11 23:54:51.0, admin, admin]
+2018-04-12 00:09:39.397 [http-nio-8080-exec-6] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020004, rs-3050004} closed
+2018-04-12 00:09:39.398 [http-nio-8080-exec-6] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020004} closed
+2018-04-12 00:09:39.398 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:39.398 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:39.402 [http-nio-8080-exec-6] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:09:41.210 [http-nio-8080-exec-4] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:09:41.210 [http-nio-8080-exec-4] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:41.211 [http-nio-8080-exec-4] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:09:41.211 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:41.211 [http-nio-8080-exec-4] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020005} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:41.212 [http-nio-8080-exec-4] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020005} Parameters : [admin]
+2018-04-12 00:09:41.212 [http-nio-8080-exec-4] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020005} Types : [VARCHAR]
+2018-04-12 00:09:41.212 [http-nio-8080-exec-4] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020005, rs-3050005} query executed. 0.572878 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:41.212 [http-nio-8080-exec-4] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020005, rs-3050005} open
+2018-04-12 00:09:41.212 [http-nio-8080-exec-4] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020005, rs-3050005} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:09:41.213 [http-nio-8080-exec-4] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020005, rs-3050005} Result: [1, 2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-11 23:54:51.0, admin, admin]
+2018-04-12 00:09:41.213 [http-nio-8080-exec-4] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020005, rs-3050005} closed
+2018-04-12 00:09:41.213 [http-nio-8080-exec-4] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020005} closed
+2018-04-12 00:09:41.214 [http-nio-8080-exec-4] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:41.214 [http-nio-8080-exec-4] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:41.218 [http-nio-8080-exec-4] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:09:43.105 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:09:43.105 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:43.106 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:09:43.106 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:43.106 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020006} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:43.107 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020006} Parameters : [admin]
+2018-04-12 00:09:43.107 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020006} Types : [VARCHAR]
+2018-04-12 00:09:43.108 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020006, rs-3050006} query executed. 0.831326 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:09:43.108 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020006, rs-3050006} open
+2018-04-12 00:09:43.108 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020006, rs-3050006} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:09:43.108 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020006, rs-3050006} Result: [1, 2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-11 23:54:51.0, admin, admin]
+2018-04-12 00:09:43.109 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020006, rs-3050006} closed
+2018-04-12 00:09:43.109 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020006} closed
+2018-04-12 00:09:43.110 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:43.110 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:43.110 [http-nio-8080-exec-1] WARN  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 用户: admin 第6次登陆尝试，已被锁定
+2018-04-12 00:09:43.111 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:09:43.111 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- saveOrUpdate:User [id=1, userName=admin, userCode=admin, password=3931MUEQD1939MQMLM4AISPVNE, telephone=13065120502]
+2018-04-12 00:09:43.113 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- userinfo:User [id=1, userName=admin, userCode=admin, password=3931MUEQD1939MQMLM4AISPVNE, telephone=13065120502]
+2018-04-12 00:09:43.122 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL
+				- update tb_user set create_time=?, delete_status=?, locked=?, password=?, telephone=?, update_time=?, user_code=?, user_name=? where id=?
+2018-04-12 00:09:43.122 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020007} created. 
+update tb_user set create_time=?, delete_status=?, locked=?, password=?, telephone=?, update_time=?, user_code=?, user_name=? where id=?
+2018-04-12 00:09:43.123 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020007} Parameters : [2017-01-09 17:26:41.0, 0, 1, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-12 00:09:43.113, admin, admin, 1]
+2018-04-12 00:09:43.123 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020007} Types : [TIMESTAMP, INTEGER, INTEGER, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, INTEGER]
+2018-04-12 00:09:43.124 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020007} update executed. effort 1. 0.873934 millis. 
+update tb_user set create_time=?, delete_status=?, locked=?, password=?, telephone=?, update_time=?, user_code=?, user_name=? where id=?
+2018-04-12 00:09:43.124 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020007} closed
+2018-04-12 00:09:43.149 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:09:43.150 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:09:43.153 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:10:17.748 [http-nio-8080-exec-7] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-connect
+2018-04-12 00:10:17.748 [http-nio-8080-exec-7] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit false
+2018-04-12 00:10:17.748 [http-nio-8080-exec-7] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:10:17.749 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:10:17.750 [http-nio-8080-exec-7] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020008} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:10:17.750 [http-nio-8080-exec-7] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020008} Parameters : [admin]
+2018-04-12 00:10:17.750 [http-nio-8080-exec-7] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020008} Types : [VARCHAR]
+2018-04-12 00:10:17.751 [http-nio-8080-exec-7] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020008, rs-3050007} query executed. 0.778765 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:10:17.751 [http-nio-8080-exec-7] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020008, rs-3050007} open
+2018-04-12 00:10:17.751 [http-nio-8080-exec-7] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020008, rs-3050007} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:10:17.751 [http-nio-8080-exec-7] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020008, rs-3050007} Result: [1, 2017-01-09 17:26:41.0, 0, 1, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-12 00:09:43.0, admin, admin]
+2018-04-12 00:10:17.752 [http-nio-8080-exec-7] DEBUG druid.sql.ResultSet
+				- {conn-3010001, pstmt-3020008, rs-3050007} closed
+2018-04-12 00:10:17.752 [http-nio-8080-exec-7] DEBUG druid.sql.Statement
+				- {conn-3010001, pstmt-3020008} closed
+2018-04-12 00:10:17.752 [http-nio-8080-exec-7] DEBUG druid.sql.Connection
+				- {conn-3010001} commited
+2018-04-12 00:10:17.752 [http-nio-8080-exec-7] DEBUG druid.sql.Connection
+				- {conn-3010001} setAutoCommit true
+2018-04-12 00:10:17.752 [http-nio-8080-exec-7] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 账号已被锁定：admin
+2018-04-12 00:10:17.756 [http-nio-8080-exec-7] DEBUG druid.sql.Connection
+				- {conn-3010001} pool-recycle
+2018-04-12 00:11:18.689 [Thread-139] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用关闭
+2018-04-12 00:11:18.701 [Thread-139] DEBUG druid.sql.Connection
+				- {conn-3110001} closed
+2018-04-12 00:11:18.701 [Thread-139] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-32} closed
+2018-04-12 00:11:18.702 [Thread-139] DEBUG druid.sql.Connection
+				- {conn-3010001} closed
+2018-04-12 00:11:18.703 [Thread-139] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-31} closed
+2018-04-12 00:11:19.079 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量
+2018-04-12 00:11:19.085 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Starting Application on MrLi-PC with PID 7824 (G:\gitt\SpringBoot-Base-System\base\target\classes started by Mr.Li in G:\gitt\SpringBoot-Base-System\base)
+2018-04-12 00:11:19.085 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-12 00:11:19.085 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- No active profile set, falling back to default profiles: default
+2018-04-12 00:11:19.089 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 初始化环境变量完成
+2018-04-12 00:11:20.097 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory
+				- Configuring ehcache from InputStream
+2018-04-12 00:11:20.099 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xmlns:xsi
+2018-04-12 00:11:20.099 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler
+				- Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2018-04-12 00:11:20.099 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration
+				- Disk Store Path: C:\Users\Mr.Li\AppData\Local\Temp\
+2018-04-12 00:11:20.109 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil
+				- propertiesString is null.
+2018-04-12 00:11:20.110 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheManagerEventListenerFactory class specified. Skipping...
+2018-04-12 00:11:20.114 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:11:20.114 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:11:20.114 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:11:20.115 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:11:20.115 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:11:20.115 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:11:20.116 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-04-12 00:11:20.116 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- CacheWriter factory not configured. Skipping...
+2018-04-12 00:11:20.116 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- No CacheExceptionHandlerFactory class specified. Skipping...
+2018-04-12 00:11:20.117 [restartedMain] DEBUG net.sf.ehcache.store.MemoryStore
+				- Initialized net.sf.ehcache.store.MemoryStore for passwordRetryCache
+2018-04-12 00:11:20.118 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:11:20.119 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:11:20.119 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+2018-04-12 00:11:20.119 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+2018-04-12 00:11:20.119 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:11:20.119 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:11:20.119 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:11:20.120 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:11:20.120 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:11:20.120 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:11:20.120 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_GET
+2018-04-12 00:11:20.121 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_PUT
+2018-04-12 00:11:20.121 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: DISK_REMOVE
+2018-04-12 00:11:20.121 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:11:20.121 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:11:20.121 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:11:20.122 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:11:20.122 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:11:20.123 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: passwordRetryCache
+2018-04-12 00:11:20.123 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'passwordRetryCache'.
+2018-04-12 00:11:20.123 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'passwordRetryCache'.
+2018-04-12 00:11:20.123 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration
+				- Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2018-04-12 00:11:20.125 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Using diskstore path C:\Users\Mr.Li\AppData\Local\Temp
+2018-04-12 00:11:20.125 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager
+				- Holding exclusive lock on C:\Users\Mr.Li\AppData\Local\Temp\.ehcache-diskstore.lock
+2018-04-12 00:11:20.125 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.data
+2018-04-12 00:11:20.126 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:11:20.126 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Matching data file missing (or empty) for index file. Deleting index file C:\Users\Mr.Li\AppData\Local\Temp\resource%0043ache.index
+2018-04-12 00:11:20.127 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory
+				- Failed to delete file resource%0043ache.index
+2018-04-12 00:11:20.133 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2018-04-12 00:11:20.133 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2018-04-12 00:11:20.134 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2018-04-12 00:11:20.134 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: REMOTE_SIZE
+2018-04-12 00:11:20.134 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2018-04-12 00:11:20.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_GET
+2018-04-12 00:11:20.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_PUT
+2018-04-12 00:11:20.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: OFFHEAP_REMOVE
+2018-04-12 00:11:20.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_COMMIT
+2018-04-12 00:11:20.135 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_ROLLBACK
+2018-04-12 00:11:20.136 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: XA_RECOVERY
+2018-04-12 00:11:20.136 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: CLUSTER_EVENT
+2018-04-12 00:11:20.136 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl
+				- Mocking Operation Statistic: NONSTOP
+2018-04-12 00:11:20.137 [restartedMain] DEBUG net.sf.ehcache.Cache
+				- Initialised cache: resourceCache
+2018-04-12 00:11:20.138 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2018-04-12 00:11:20.138 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper
+				- CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2018-04-12 00:11:20.274 [restartedMain] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 生成passwordRetryCache
+2018-04-12 00:11:20.773 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-33} inited
+2018-04-12 00:11:20.778 [Druid-ConnectionPool-Create-8634359] DEBUG druid.sql.Connection
+				- {conn-3210001} connected
+2018-04-12 00:11:20.780 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:20.781 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:20.866 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:20.871 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:20.900 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:20.901 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:20.901 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:20.901 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:20.901 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:20.901 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:20.932 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:22.037 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:22.398 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource
+				- {dataSource-34} inited
+2018-04-12 00:11:22.402 [Druid-ConnectionPool-Create-2990227] DEBUG druid.sql.Connection
+				- {conn-3310001} connected
+2018-04-12 00:11:22.403 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-connect
+2018-04-12 00:11:22.407 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-recycle
+2018-04-12 00:11:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-connect
+2018-04-12 00:11:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-recycle
+2018-04-12 00:11:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-connect
+2018-04-12 00:11:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-recycle
+2018-04-12 00:11:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-connect
+2018-04-12 00:11:22.443 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-recycle
+2018-04-12 00:11:22.460 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-connect
+2018-04-12 00:11:23.551 [restartedMain] DEBUG druid.sql.Connection
+				- {conn-3310001} pool-recycle
+2018-04-12 00:11:24.397 [restartedMain] INFO  org.apache.catalina.core.StandardService
+				- Starting service [Tomcat]
+2018-04-12 00:11:24.398 [restartedMain] INFO  org.apache.catalina.core.StandardEngine
+				- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-12 00:11:24.442 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring embedded WebApplicationContext
+2018-04-12 00:11:24.794 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.RedisConfig
+				- redisTemplate:org.springframework.data.redis.core.RedisTemplate@6c69a7
+2018-04-12 00:11:24.880 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 开始初始化redis数据->base:0
+2018-04-12 00:11:24.897 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:24.897 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3210001} setAutoCommit false
+2018-04-12 00:11:24.903 [localhost-startStop-1] DEBUG org.hibernate.SQL
+				- select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:11:24.904 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220000} created. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:11:24.904 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220000} Parameters : []
+2018-04-12 00:11:24.904 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220000} Types : []
+2018-04-12 00:11:24.905 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220000, rs-3250000} query executed. 0.62917 millis. 
+select borrowbook0_.user_id as user_id1_1_, borrowbook0_.book_id as book_id2_1_, borrowbook0_.book_author as book_aut3_1_, borrowbook0_.book_name as book_nam4_1_, borrowbook0_.book_press as book_pre5_1_, borrowbook0_.update_time as update_t6_1_ from tb_borrow_books borrowbook0_
+2018-04-12 00:11:24.905 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220000, rs-3250000} open
+2018-04-12 00:11:24.905 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220000, rs-3250000} Header: [user_id, book_id, book_author, book_name, book_press, update_time]
+2018-04-12 00:11:24.905 [localhost-startStop-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220000, rs-3250000} closed
+2018-04-12 00:11:24.905 [localhost-startStop-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220000} closed
+2018-04-12 00:11:24.906 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3210001} commited
+2018-04-12 00:11:24.906 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3210001} setAutoCommit true
+2018-04-12 00:11:24.906 [localhost-startStop-1] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
+2018-04-12 00:11:24.907 [localhost-startStop-1] INFO  cn.edu.jxnu.base.config.listener.RedisGetDataListener
+				- 初始化redis数据完毕->base:0
+2018-04-12 00:11:27.124 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用刷新
+2018-04-12 00:11:27.128 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:11:27.129 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol
+				- Starting ProtocolHandler ["http-nio-8080"]
+2018-04-12 00:11:27.131 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool
+				- Using a shared selector for servlet write/read
+2018-04-12 00:11:27.141 [restartedMain] DEBUG cn.edu.jxnu.base.config.listener.ApplicationEventListener
+				- 应用已启动完成
+2018-04-12 00:11:27.141 [restartedMain] INFO  cn.edu.jxnu.base.Application
+				- Started Application in 8.133 seconds (JVM running for 1500.641)
+2018-04-12 00:11:27.141 [restartedMain] DEBUG cn.edu.jxnu.base.Application
+				- 启动成功
+2018-04-12 00:11:34.949 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]
+				- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-12 00:11:34.968 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-connect
+2018-04-12 00:11:34.969 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} setAutoCommit false
+2018-04-12 00:11:34.969 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- findByUserCode:admin
+2018-04-12 00:11:34.974 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL
+				- select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:11:34.975 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220001} created. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:11:34.976 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220001} Parameters : [admin]
+2018-04-12 00:11:34.976 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220001} Types : [VARCHAR]
+2018-04-12 00:11:34.976 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220001, rs-3250001} query executed. 0.808311 millis. 
+select user0_.id as id1_5_, user0_.create_time as create_t2_5_, user0_.delete_status as delete_s3_5_, user0_.locked as locked4_5_, user0_.password as password5_5_, user0_.telephone as telephon6_5_, user0_.update_time as update_t7_5_, user0_.user_code as user_cod8_5_, user0_.user_name as user_nam9_5_ from tb_user user0_ where user0_.user_code=?
+2018-04-12 00:11:34.976 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220001, rs-3250001} open
+2018-04-12 00:11:34.977 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220001, rs-3250001} Header: [id, create_time, delete_status, locked, password, telephone, update_time, user_code, user_name]
+2018-04-12 00:11:34.977 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220001, rs-3250001} Result: [1, 2017-01-09 17:26:41.0, 0, 1, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-12 00:09:43.0, admin, admin]
+2018-04-12 00:11:34.978 [http-nio-8080-exec-1] DEBUG druid.sql.ResultSet
+				- {conn-3210001, pstmt-3220001, rs-3250001} closed
+2018-04-12 00:11:34.978 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220001} closed
+2018-04-12 00:11:34.979 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} commited
+2018-04-12 00:11:34.979 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} setAutoCommit true
+2018-04-12 00:11:34.979 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 恢复标志位:admin
+2018-04-12 00:11:34.979 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} setAutoCommit false
+2018-04-12 00:11:34.980 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- saveOrUpdate:User [id=1, userName=admin, userCode=admin, password=3931MUEQD1939MQMLM4AISPVNE, telephone=13065120502]
+2018-04-12 00:11:34.982 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.service.impl.UserServiceImpl
+				- userinfo:User [id=1, userName=admin, userCode=admin, password=3931MUEQD1939MQMLM4AISPVNE, telephone=13065120502]
+2018-04-12 00:11:34.991 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL
+				- update tb_user set create_time=?, delete_status=?, locked=?, password=?, telephone=?, update_time=?, user_code=?, user_name=? where id=?
+2018-04-12 00:11:34.992 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220002} created. 
+update tb_user set create_time=?, delete_status=?, locked=?, password=?, telephone=?, update_time=?, user_code=?, user_name=? where id=?
+2018-04-12 00:11:34.993 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220002} Parameters : [2017-01-09 17:26:41.0, 0, 0, 3931MUEQD1939MQMLM4AISPVNE, 13065120502, 2018-04-12 00:11:34.982, admin, admin, 1]
+2018-04-12 00:11:34.993 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220002} Types : [TIMESTAMP, INTEGER, INTEGER, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, INTEGER]
+2018-04-12 00:11:34.993 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220002} update executed. effort 1. 0.732425 millis. 
+update tb_user set create_time=?, delete_status=?, locked=?, password=?, telephone=?, update_time=?, user_code=?, user_name=? where id=?
+2018-04-12 00:11:34.993 [http-nio-8080-exec-1] DEBUG druid.sql.Statement
+				- {conn-3210001, pstmt-3220002} closed
+2018-04-12 00:11:35.029 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} commited
+2018-04-12 00:11:35.029 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} setAutoCommit true
+2018-04-12 00:11:35.029 [http-nio-8080-exec-1] INFO  cn.edu.jxnu.base.config.shiro.MyRealm
+				- 用户：admin已经进入限制缓存  第1次登录尝试
+2018-04-12 00:11:35.101 [http-nio-8080-exec-1] DEBUG druid.sql.Connection
+				- {conn-3210001} pool-recycle
