@@ -286,6 +286,12 @@
             newLine += "<td style='text-align:center'><button id=delete class='btn btn-xs btn-danger'><span class='glyphicon glyphicon-remove' aria-hidden='true'><span> 删除</td>";
             newLine += "</tr>";
             $("#confirmTable").append(newLine);
+            /** 添加成功弹出提示*/
+         	layer.msg('添加成功', 
+			{
+					icon: 1,
+					time: 1000,
+			});
         }else
         {
             isInArry=0;
