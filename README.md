@@ -45,6 +45,7 @@
 ![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C.png)
 ![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E5%AF%86%E7%A0%81%E9%99%90%E5%88%B6.png)
 ![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/xmind%E5%9B%BE.png)
+![](https://github.com/jxnu-liguobin/SpringBoot-Base-System/blob/master/base/images/%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95.png)
  
 ### 使用：
     1）使用mysql数据库，先建立一个空数据库base，使用utf-8字符集。
