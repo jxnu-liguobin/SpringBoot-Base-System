@@ -50,8 +50,7 @@
 ### 使用：
     1）使用mysql数据库，先建立一个空数据库base，使用utf-8字符集。
     2）把application.properties中的数据库连接信息修改成自己数据库的连接信息。默认使用master主数据源
-    3）修改spring.jpa.hibernate.ddl-auto为create，目的是让系统自动建表同时初始化相关集成数据。
-    如果不需要自动初始化数据，可以删除resource目录下的managesystemdb.sql文件。或者改为validate
+    3）resources下存放*.sql是使用Spring jdbc自动建表并初始化数据，默认放在resources/sql下【即不生效的，想用JPA也可以，具体看application.properties说明】
     4）启动后，访问：http://localhost:8080/admin会自动跳转到后台登录页面。
     5）初始用户名和密码为：admin/adminm。可能是222222
     
