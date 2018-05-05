@@ -53,6 +53,8 @@ public class MemorandumUtils {
 	/**
 	 * 自主登陆或者注册使用，即本身就是操作人
 	 * 
+	 * 回调
+	 * 
 	 * @author 梦境迷离.
 	 * @time 2018年5月2日
 	 * @version v1.0

@@ -19,7 +19,6 @@
 
     <link href="${ctx!}/assets/css/animate.css" rel="stylesheet">
     <link href="${ctx!}/assets/css/style.css?v=4.1.0" rel="stylesheet">
-
 </head>
 
 <body class="gray-bg">
@@ -42,7 +41,7 @@
 		                        <!-- Example Card View -->
 		                        <div class="example-wrap">
 		                            <div class="example">
-		                            	<table id="table_list"></table>
+		                            	<table id="table_list" ></table>
 		                            </div>
 		                        </div>
 		                        <!-- End Example Card View -->

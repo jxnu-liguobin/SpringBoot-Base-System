@@ -78,11 +78,12 @@
 			    //启动分页  
 			    pagination: true,
 			    //每页显示的记录数  
-			    pageSize: 10,
+			    pageSize: 25,
+			    sortOrder: "desc",
 			    //当前第几页  
 			    pageNumber: 1,
 			    //记录数可选列表  
-			    pageList: [5, 10, 15, 20, 25],
+			    pageList: [10, 25, 50, 100],
 			    //是否启用查询  
 			    search: true,
 			    //是否启用详细信息视图
@@ -104,10 +105,9 @@
 			    columns: [{
 			        title: "ID",
 			        field: "id",
-			        sortable: true,
 			        align: 'center'
 			    },{
-			        title: "操作 | ID/KEY | 姓名/名称",
+			        title: "【操作】 | 【ID/KEY】 | 【姓名/名称】",
 			        field: "resourceName",
 			        align: 'center'
 			    },{

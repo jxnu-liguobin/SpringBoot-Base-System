@@ -183,7 +183,12 @@
                 };
             },
             //数据列
-            columns: [{
+            columns: [
+            {
+           		 title: "ID",
+                 field: "bookId",
+                 align: "center"
+            	},{
                 title: "书名",
                 field: "bookName",
                 align: "center"
@@ -253,7 +258,7 @@
              $.ajax({
                  type: "POST",
                  dataType: "json",
-                 url: "${ctx!}/web/books/delete/" + id,
+                 url: "${ctx!}/web/books/delete/" + id+'?uCode='+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>',
                  success: function(msg){
                      layer.msg(msg.message, {time: 2000},function(){
                          $('#table_list').bootstrapTable("refresh");

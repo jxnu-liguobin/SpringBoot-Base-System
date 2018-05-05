@@ -53,6 +53,7 @@
                             <div class="col-sm-8">
                                 <input class="form-control" type="text" id="bookInventory" name="bookInventory" value="${book.bookInventory}"/>
                                 <input type="hidden" id="currentInventory" name="currentInventory" value="${book.currentInventory}"/>
+                                <input type="hidden" id="cInventory" name="cInventory" value="${book.bookInventory}"/>
                             </div>
                         </div>
 
@@ -112,7 +113,7 @@
                 $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "${ctx!}/web/books/edit",
+                    url: "${ctx!}/web/books/edit"+'?uCode='+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="userCode"/>'+'&cInventory='+$("#cInventory").val(),
                     data: $(form).serialize(),
                     success: function(msg){
                         layer.msg(msg.message, {time: 2000},function(){

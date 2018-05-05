@@ -13,11 +13,13 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
 import cn.edu.jxnu.base.common.JsonResult;
+import cn.edu.jxnu.base.common.MemorandumUtils;
 import cn.edu.jxnu.base.controller.BaseController;
 import cn.edu.jxnu.base.entity.Book;
 import cn.edu.jxnu.base.entity.BorrowBook;
@@ -33,8 +35,8 @@ import cn.edu.jxnu.base.service.specification.SpecificationOperator.Operator;
 /**
  * 图书管理控制类
  * 
- * @author 梦境迷离 
- *@time 2018年4月10日 下午5:28:05.
+ * @author 梦境迷离
+ * @time 2018年4月10日 下午5:28:05.
  * @version V1.0
  */
 @Controller
@@ -50,6 +52,8 @@ public class BookController extends BaseController {
 	private IBorrowBookService borrowBookService;
 	@Autowired
 	private IUserService userService;
+	@Autowired
+	private MemorandumUtils memorandumUtils;
 
 	/**
 	 * 默认索引页
@@ -74,17 +78,21 @@ public class BookController extends BaseController {
 	/**
 	 * 删除图书
 	 * 
-	 * 考虑书已经被借出去了，不能再删除 
-	 *@time 2018年4月10日 下午5:28:38.
+	 * 考虑书已经被借出去了，不能再删除
+	 * 
+	 * @time 2018年4月10日 下午5:28:38.
 	 * 
 	 * @version V1.0
 	 * @param id
 	 * @param map
+	 * @param uCode
+	 *            操作人
 	 * @return JsonResult
+	 * 
 	 */
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult delete(@PathVariable String id, ModelMap map) {
+	public JsonResult delete(@PathVariable String id, ModelMap map, @RequestParam("uCode") String uCode) {
 		try {
 			List<User> ls = userService.findAll();
 			for (User user : ls) {
@@ -99,7 +107,10 @@ public class BookController extends BaseController {
 					}
 				}
 			}
+			Book temp = bookService.findByBookId(id);
 			bookService.delete(id);
+			memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+					"删除图书", temp.getBookId() + " | " + temp.getBookName());
 		} catch (Exception e) {
 			e.printStackTrace();
 			return JsonResult.failure("删除失败");
@@ -110,7 +121,7 @@ public class BookController extends BaseController {
 	/**
 	 * 借书
 	 * 
-	 *@time 2018年4月10日 下午5:29:10.
+	 * @time 2018年4月10日 下午5:29:10.
 	 * 
 	 * @version V1.0
 	 * @param borrowlist
@@ -186,7 +197,7 @@ public class BookController extends BaseController {
 	/**
 	 * 还书表
 	 * 
-	 *@time 2018年4月10日 下午5:29:44.
+	 * @time 2018年4月10日 下午5:29:44.
 	 * 
 	 * @version V1.0
 	 * @param id
@@ -216,7 +227,7 @@ public class BookController extends BaseController {
 	/**
 	 * 管理员归还图书
 	 * 
-	 *@time 2018年4月10日 下午5:30:39.
+	 * @time 2018年4月10日 下午5:30:39.
 	 * 
 	 * @version V1.0
 	 * @param borrowlist
@@ -262,7 +273,7 @@ public class BookController extends BaseController {
 	/**
 	 * 无授权的归还一本图书
 	 * 
-	 *@time 2018年4月10日 下午5:30:59.
+	 * @time 2018年4月10日 下午5:30:59.
 	 * 
 	 * @version V1.0
 	 * @param jsonDate
@@ -289,7 +300,7 @@ public class BookController extends BaseController {
 			bookIdList.remove(bookId);// 去除这本书
 			Map<Integer, List<String>> map = new HashMap<>();
 			map.put(userId, bookIdList);
-			System.out.println("当前还需还的书："+bookIdList);
+			System.out.println("当前还需还的书：" + bookIdList);
 			// 重写添加到redis中
 			redisService.putMap("base:0", map);
 			Book book = new Book();
@@ -307,7 +318,7 @@ public class BookController extends BaseController {
 	/**
 	 * 修改图书响应请求
 	 * 
-	 *@time 2018年4月10日 下午5:31:18.
+	 * @time 2018年4月10日 下午5:31:18.
 	 * 
 	 * @version V1.0
 	 * @param id
@@ -326,7 +337,7 @@ public class BookController extends BaseController {
 	/**
 	 * 修改图书
 	 * 
-	 *@time 2018年4月10日 下午5:31:46.
+	 * @time 2018年4月10日 下午5:31:46.
 	 * 
 	 * @version V1.0
 	 * @param book
@@ -336,9 +347,13 @@ public class BookController extends BaseController {
 	 */
 	@RequestMapping(value = { "/edit" }, method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult edit(Book book, ModelMap map) {
+	public JsonResult edit(Book book, ModelMap map, @RequestParam("uCode") String uCode,
+			@RequestParam("cInventory") Integer cInventory) {
 		try {
-			bookService.saveOrUpdate(book);
+
+			bookService.saveOrUpdate(book, cInventory);
+			memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
+					"修改/新增图书", book.getBookId() + " | " + book.getBookName());
 		} catch (Exception e) {
 			return JsonResult.failure(e.getMessage());
 		}
@@ -367,7 +382,7 @@ public class BookController extends BaseController {
 	/**
 	 * 前台查询图书
 	 * 
-	 *@time 2018年4月10日 下午5:32:30.
+	 * @time 2018年4月10日 下午5:32:30.
 	 * 
 	 * @version V1.0
 	 * @return Page 类型 Book

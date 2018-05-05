@@ -43,4 +43,16 @@ public interface IBookService extends IBaseService<Book, String> {
 	 */
 	void saveOrUpdate(Book book);
 
+	/**
+	 * 保存或更新图书信息
+	 * 携带当前库存
+	 * 
+	 * @author 梦境迷离.
+	 * @time 2018年5月5日
+	 * @version v1.0
+	 * @param book
+	 * @param cInventory
+	 */
+	void saveOrUpdate(Book book, Integer cInventory);
+
 }
