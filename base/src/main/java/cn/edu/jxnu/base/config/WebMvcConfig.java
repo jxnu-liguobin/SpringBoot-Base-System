@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
@@ -122,6 +124,18 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 		registration.addUrlPatterns("/*");
 		registration.setOrder(1);
 		return registration;
+	}
+
+	/**
+	 * 域名直接访问主页
+	 */
+	public static String LOGIN_USER = "loginUser";
+
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/").setViewName("forward:/admin/login");
+		registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
+		super.addViewControllers(registry);
 	}
 
 }
