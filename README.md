@@ -50,10 +50,16 @@
 ### 使用：
     1）使用mysql数据库，先建立一个空数据库base，使用utf-8字符集。
     2）把application.properties中的数据库连接信息修改成自己数据库的连接信息。默认使用master主数据源
-    3）resources下存放*.sql是使用Spring jdbc自动建表并初始化数据，默认放在resources/sql下【即不生效的，想用JPA也可以，具体看application.properties说明】
-    4）启动后，访问：http://localhost:8080/admin会自动跳转到后台登录页面。
+    3）resources下存放*.sql是使用Spring jdbc自动建表并初始化数据，默认放在resources/sql下
+    【即不生效的，想用JPA也可以，具体看application.properties说明】
+    4）启动后，访问：http://localhost:9999会自动跳转到后台登录页面。
     5）初始用户名和密码为：admin/adminm。可能是222222
-    
+    6）使用Jar打包发布，预览地址http://weixinsell.nat300.top
+    7）在线测试信息
+    账号：1526705033 密码：111111 角色：test 用户姓名：test
+    拥有所有权限【禁用了资源修改与删除】
+    注：因使用natapp映射，速度可能有点慢。
+    
     
 ### ^ ^
         增加全局异常处理
