@@ -74,11 +74,12 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
 		} else {
 			matches = true;
 		}
-		// boolean matches = super.doCredentialsMatch(token, info); 有问题
+		// boolean matches = super.doCredentialsMatch(token, info);
+		// 有问题，这里可能是因为加密的MD5不同，所以没用，自定义md5()实现是：toString(32).toUpperCase()
 		if (matches) {
 			User user = userService.findByUserCode(userCode);
 			SecurityUtils.getSubject().getSession().setTimeout(1000 * 60 * 10);
-			SecurityUtils.getSubject().getSession().setAttribute(Constats.CURRENTUSER+user.getId(), user);
+			SecurityUtils.getSubject().getSession().setAttribute(Constats.CURRENTUSER + user.getId(), user);
 			log.info("登录成功，去除缓存");
 			if (passwordRetryCache.get(userCode) != null)
 				passwordRetryCache.remove(userCode);
