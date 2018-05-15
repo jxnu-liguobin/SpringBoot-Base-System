@@ -27,8 +27,8 @@ import lombok.EqualsAndHashCode;
  * 实体（类）的serialVersionUID进行比较，如果相同就认为是一致的，可以进行反序列化，
  * 否则就会出现序列化版本不一致的异常。(InvalidCastException) serialVersionUID有两种显示的生成方式：
  * 一个是默认的1L，比如：private static final long serialVersionUID = 1L;
- * 一个是根据类名、接口名、成员方法及属性等来生成一个64位的哈希字段
- * 注意：阿里电面问过序列化机制 最后补充：序列化关键一点在于远程方法调用（RMI）中可以隐藏底层细节
+ * 一个是根据类名、接口名、成员方法及属性等来生成一个64位的哈希字段 注意：阿里电面问过序列化机制
+ * 最后补充：序列化关键一点在于远程方法调用（RMI）中可以隐藏底层细节
  * </p>
  * 
  * @author 梦境迷离
@@ -38,7 +38,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Table(name = "tb_user")
 @Data
-@EqualsAndHashCode(callSuper=false)
+@EqualsAndHashCode(callSuper = false)
 public class User extends BaseEntity {
 
 	/**
@@ -53,6 +53,8 @@ public class User extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", nullable = false)
 	private Integer id;
+
+	// Scala 有可能会因为编译顺序问题，找不到get方法,此时可以自己加，也可以改变Eclipse编译顺序
 
 	/**
 	 * 学号
