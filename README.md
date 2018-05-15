@@ -6,15 +6,17 @@
         角色管理
         资源链接管理
         图书管理
-        
         
-        
-        资源与角色动态分配
+        权限动态分配
         SQL监控
-        修改注册信息
+        个人注册
+        密码次数验证
         待还与查询
         资源操作记录
-       
+        集成Scala支持与Java混合开发 
+        
+        
+        
  *       使用的技术
 
        
@@ -22,6 +24,7 @@
         模板引擎：Freemarker
         MVC框架：SpringMVC
         JDK:1.8必须
+        Scala:2.11.8可选
         前端：Jquery、Jquery Validate、 hAdmin UI、bootstrap、BootStrap Table
         持久层框架：SpringData JPA
         权限控制框架：Shiro
@@ -96,6 +99,7 @@
         增加角色/用户增删改操作记录
         增加图书增删改操作记录
         修复在库存变更时没有更新当前可用库存的bug
+        使用Scala重构一个cn.edu.jxnu.base.controller.admin下的Controller 
         Loading...
  
  
