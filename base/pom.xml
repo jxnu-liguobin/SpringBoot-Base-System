@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -20,8 +21,19 @@
 		<java.version>1.8</java.version>
 	</properties>
 
-	<!-- Add typical dependencies for a web application -->
 	<dependencies>
+
+		<!-- scala -->
+		<dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>2.11.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.scala-logging</groupId>
+			<artifactId>scala-logging-slf4j_2.11</artifactId>
+			<version>2.1.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -53,7 +65,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
-
+		<!-- 单元测试 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -66,7 +78,7 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.15</version>
 		</dependency>
-
+		<!-- Ehcache -->
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache</artifactId>
@@ -82,6 +94,7 @@
 			<artifactId>shiro-spring</artifactId>
 			<version>${shiro.version}</version>
 		</dependency>
+		<!-- Shiro 标签 -->
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-web</artifactId>
@@ -113,7 +126,6 @@
 			<artifactId>joda-time</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.jadira.usertype/usertype.core -->
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.core</artifactId>
@@ -148,7 +160,39 @@
 	</dependencies>
 
 	<build>
+
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
 		<plugins>
+			<plugin>
+				<groupId>org.scala-tools</groupId>
+				<artifactId>maven-scala-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compile</goal>
+							<goal>testCompile</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<recompileMode>incremental</recompileMode>
+					<scalaVersion>2.11.8</scalaVersion>
+					<launchers>
+						<launcher>
+							<id>app</id>
+							<mainClass>cn.edu.jxnu.base.Application</mainClass>
+							<args>
+								<arg>-deprecation</arg>
+							</args>
+							<jvmArgs>
+								<jvmArg>-Xms64m</jvmArg>
+								<jvmArg>-Xmx1024m</jvmArg>
+							</jvmArgs>
+						</launcher>
+					</launchers>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

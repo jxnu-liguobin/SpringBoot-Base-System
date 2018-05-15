@@ -163,7 +163,7 @@
                             //var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                             //parent.layer.close(index);
                             //清空密码框
-                            window.location.href='/admin/info'
+                            window.location.href='/admin/info?id='+'<@shiro.principal type="cn.edu.jxnu.base.entity.User" property="id"/>'
                             //$('#password1').val('');
                             //$('#password').val('');
                         });
