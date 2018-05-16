@@ -99,8 +99,8 @@
         增加角色/用户增删改操作记录
         增加图书增删改操作记录
         修复在库存变更时没有更新当前可用库存的bug
-        使用Scala重构一个cn.edu.jxnu.base.controller.admin下的Controller 
-        Loading...
+        使用Scala重构部分
+        代码Loading...
  
  
 ###     QAQ
