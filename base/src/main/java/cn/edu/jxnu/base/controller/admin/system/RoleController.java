@@ -36,10 +36,10 @@ public class RoleController extends BaseController {
 
 	@Autowired
 	private MemorandumUtils memorandumUtils;
-	
+
 	@Autowired
 	private IUserService userService;
-	
+
 	/**
 	 * 打开角色管理首页页面
 	 * 
@@ -114,12 +114,13 @@ public class RoleController extends BaseController {
 	 * @version V1.0
 	 * @param role
 	 * @param map
-	 * @param uCode 操作人
+	 * @param uCode
+	 *            操作人
 	 * @return JsonResult
 	 */
 	@RequestMapping(value = { "/edit" }, method = RequestMethod.POST)
 	@ResponseBody
-	public JsonResult edit(Role role, ModelMap map,@RequestParam("uCode") String uCode) {
+	public JsonResult edit(Role role, ModelMap map, @RequestParam("uCode") String uCode) {
 		try {
 			roleService.saveOrUpdate(role);
 			memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(),
@@ -137,7 +138,8 @@ public class RoleController extends BaseController {
 	 * @version V1.0
 	 * @param id
 	 * @param map
-	 * @param uCode 操作人
+	 * @param uCode
+	 *            操作人
 	 * @return JsonResult
 	 */
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)

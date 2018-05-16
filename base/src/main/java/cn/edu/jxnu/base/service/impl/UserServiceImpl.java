@@ -63,7 +63,7 @@ public class UserServiceImpl extends BaseServiceImpl<User, Integer> implements I
 		if (user.getId() != null) {
 			User dbUser = find(user.getId());
 			dbUser.setUserName(user.getUserName());
-			//20是前端的密码最大长度
+			//20是前端的密码最大长度，考虑不周
 			if(user.getPassword().length()<20){
 				//避免二次加密
 				dbUser.setPassword(MD5Utils.md5(user.getPassword()));
