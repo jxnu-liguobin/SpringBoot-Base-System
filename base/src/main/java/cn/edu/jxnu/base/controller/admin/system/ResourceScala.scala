@@ -8,8 +8,6 @@ import cn.edu.jxnu.base.controller.BaseController
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.PathVariable
 import cn.edu.jxnu.base.entity.ZtreeView
-import java.util.{ List => JavaList }
-import scala.collection.immutable.{ List => _, _ }
 import cn.edu.jxnu.base.service.specification.SimpleSpecificationBuilder
 import org.apache.commons.lang3.StringUtils
 import cn.edu.jxnu.base.entity.Resource
@@ -19,6 +17,8 @@ import org.springframework.ui.ModelMap
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import cn.edu.jxnu.base.common.JsonResult
+import scala.collection.immutable.{ List => _, _ }
+import java.util.{ List => JavaList }
 
 @Controller
 @RequestMapping(value = { Array("/admin/resource") })
