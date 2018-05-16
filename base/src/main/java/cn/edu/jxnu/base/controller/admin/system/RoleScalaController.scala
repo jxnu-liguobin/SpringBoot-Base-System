@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestParam
 import cn.edu.jxnu.base.common.JsonResult
+import org.springframework.stereotype.Controller
 
 /**
  * 系统角色控制类
@@ -27,6 +28,8 @@ import cn.edu.jxnu.base.common.JsonResult
  * @time 2018年5月16日
  * @version V2.0
  */
+@Controller
+@RequestMapping(value = { Array("/admin/role") })
 class RoleScala @Autowired() (val roleService: IRoleService, val memorandumUtils: MemorandumUtils, val userService: IUserService)
     extends BaseController {
 
@@ -102,12 +105,12 @@ class RoleScala @Autowired() (val roleService: IRoleService, val memorandumUtils
     def grant(@PathVariable id: Int, @RequestParam(required = false) resourceIds: Array[String],
         map: ModelMap): JsonResult = {
         try {
-            roleService.grant(id, resourceIds);
+            roleService.grant(id, resourceIds)
         } catch {
             case e: Exception =>
-                e.printStackTrace();
-                return JsonResult.failure(e.getMessage());
+                e.printStackTrace()
+                return JsonResult.failure(e.getMessage())
         }
-        JsonResult.success();
+        JsonResult.success()
     }
 }
