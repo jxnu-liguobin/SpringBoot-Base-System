@@ -30,7 +30,7 @@ import org.springframework.stereotype.Controller
  */
 @Controller
 @RequestMapping(value = { Array("/admin/role") })
-class RoleScala @Autowired() (val roleService: IRoleService, val memorandumUtils: MemorandumUtils, val userService: IUserService)
+class RoleController @Autowired() (val roleService: IRoleService, val memorandumUtils: MemorandumUtils, val userService: IUserService)
     extends BaseController {
 
     @RequestMapping(value = { Array("/", "/index") })

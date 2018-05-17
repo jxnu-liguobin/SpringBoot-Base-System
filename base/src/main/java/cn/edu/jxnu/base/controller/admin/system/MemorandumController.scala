@@ -16,9 +16,17 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.ui.ModelMap
 import cn.edu.jxnu.base.common.JsonResult
 
+/**
+ *
+ * 系统操作信息备忘录 控制类
+ *
+ * @author 梦境迷离.
+ * @time 2018年5月17日
+ * @version v2.0
+ */
 @Controller
 @RequestMapping(value = { Array("/admin/memorandum") })
-class MemorandumScala @Autowired() (val memorandumService: IMemorandumService) extends BaseController {
+class MemorandumController @Autowired() (val memorandumService: IMemorandumService) extends BaseController {
 
     @RequestMapping(value = { Array("/index") })
     def index() = {

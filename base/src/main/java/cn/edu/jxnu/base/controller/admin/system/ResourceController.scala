@@ -20,9 +20,17 @@ import cn.edu.jxnu.base.common.JsonResult
 import scala.collection.immutable.{ List => _, _ }
 import java.util.{ List => JavaList }
 
+/**
+ *
+ * 系统资源控制类
+ *
+ * @author 梦境迷离.
+ * @time 2018年5月17日
+ * @version v2.0
+ */
 @Controller
 @RequestMapping(value = { Array("/admin/resource") })
-class ResourceScala @Autowired() (val resourceService: IResourceService) extends BaseController {
+class ResourceController @Autowired() (val resourceService: IResourceService) extends BaseController {
 
     @RequestMapping(value = { Array("/tree/{resourceId}") })
     @ResponseBody

@@ -29,12 +29,13 @@ import cn.edu.jxnu.base.service.specification.SpecificationOperator.Operator
 import org.springframework.beans.factory.annotation.Required
 
 /**
+ * 注意：Scala类的文件名和类名可以不不同
  * @author 梦境迷离.
  * @time 2018年5月15日
  * @version v2.0
  */
 @Controller
-class AdminIndexScala @Autowired() (val userService: IUserService, val borrowBookService: IBorrowBookService)
+class AdminIndexController @Autowired() (val userService: IUserService, val borrowBookService: IBorrowBookService)
     extends BaseController {
 
     /**
