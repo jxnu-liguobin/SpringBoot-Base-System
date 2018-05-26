@@ -34,8 +34,8 @@ import scala.collection.JavaConversions._
  */
 @Controller
 @RequestMapping(value = { Array("/admin/user") })
-class UserController @Autowired() (val credentialsMatcher: RetryLimitHashedCredentialsMatcher, val userService: IUserService,
-    roleService: IRoleService, val memorandumUtils: MemorandumUtils) extends BaseController {
+class UserController @Autowired() (credentialsMatcher: RetryLimitHashedCredentialsMatcher, userService: IUserService,
+    roleService: IRoleService, memorandumUtils: MemorandumUtils) extends BaseController {
 
     @RequestMapping(value = { Array("/", "/index") })
     def index() = {
@@ -78,7 +78,7 @@ class UserController @Autowired() (val credentialsMatcher: RetryLimitHashedCrede
 
         } catch {
             case e: Exception =>
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -104,7 +104,7 @@ class UserController @Autowired() (val credentialsMatcher: RetryLimitHashedCrede
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success(res)
     }
@@ -130,7 +130,7 @@ class UserController @Autowired() (val credentialsMatcher: RetryLimitHashedCrede
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -159,7 +159,7 @@ class UserController @Autowired() (val credentialsMatcher: RetryLimitHashedCrede
         } catch {
             case e: Exception =>
                 //e.printStackTrace()
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }

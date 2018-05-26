@@ -30,7 +30,7 @@ import org.springframework.stereotype.Controller
  */
 @Controller
 @RequestMapping(value = { Array("/admin/role") })
-class RoleController @Autowired() (val roleService: IRoleService, val memorandumUtils: MemorandumUtils, val userService: IUserService)
+class RoleController @Autowired() (roleService: IRoleService, memorandumUtils: MemorandumUtils, userService: IUserService)
     extends BaseController {
 
     @RequestMapping(value = { Array("/", "/index") })
@@ -74,7 +74,7 @@ class RoleController @Autowired() (val roleService: IRoleService, val memorandum
                 "修改/新增角色", role.getRoleKey() + " | " + role.getName())
         } catch {
             case e: Exception =>
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -88,7 +88,7 @@ class RoleController @Autowired() (val roleService: IRoleService, val memorandum
             roleService.delete(id)
         } catch {
             case e: Exception =>
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -109,7 +109,7 @@ class RoleController @Autowired() (val roleService: IRoleService, val memorandum
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                return JsonResult.failure(e.getMessage())
+                JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }

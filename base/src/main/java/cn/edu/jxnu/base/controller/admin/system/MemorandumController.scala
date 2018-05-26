@@ -26,38 +26,37 @@ import cn.edu.jxnu.base.common.JsonResult
  */
 @Controller
 @RequestMapping(value = { Array("/admin/memorandum") })
-class MemorandumController @Autowired() (val memorandumService: IMemorandumService) extends BaseController {
+class MemorandumController @Autowired() (memorandumService: IMemorandumService) extends BaseController {
 
     @RequestMapping(value = { Array("/index") })
     def index() = {
-        "admin/memorandum/index";
+        "admin/memorandum/index"
     }
 
     @RequestMapping(value = { Array("/list") })
     @ResponseBody
     def list(): Page[Memorandum] = {
-        val builder = new SimpleSpecificationBuilder[Memorandum]();
-        val searchText = request.getParameter("searchText");
+        val builder = new SimpleSpecificationBuilder[Memorandum]()
+        val searchText = request.getParameter("searchText")
         if (StringUtils.isNotBlank(searchText)) {
-            builder.add("userName", Operator.likeAll.name(), searchText);
+            builder.add("userName", Operator.likeAll.name(), searchText)
         }
-        val page = memorandumService.findAll(builder.generateSpecification(), getPageRequest());
-        println(f"Memorandum：$page.getSize()");
-        page;
+        memorandumService.findAll(builder.generateSpecification(), getPageRequest())
+
     }
 
     @ResponseBody
     @PostMapping(value = { Array("/delete/{id}") })
     def delete(@PathVariable id: Int, map: ModelMap): JsonResult = {
         try {
-            memorandumService.delete(id);
-            println(f"删除：$id 成功");
+            memorandumService.delete(id)
+            println(f"删除：$id 成功")
         } catch {
             case e: Exception =>
-                e.printStackTrace();
-                return JsonResult.failure(e.getMessage());
+                e.printStackTrace()
+                JsonResult.failure(e.getMessage())
         }
-        JsonResult.success();
+        JsonResult.success()
     }
 
 }

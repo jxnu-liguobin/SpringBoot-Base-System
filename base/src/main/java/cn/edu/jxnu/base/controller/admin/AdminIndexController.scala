@@ -35,7 +35,7 @@ import org.springframework.beans.factory.annotation.Required
  * @version v2.0
  */
 @Controller
-class AdminIndexController @Autowired() (val userService: IUserService, val borrowBookService: IBorrowBookService)
+class AdminIndexController @Autowired() (userService: IUserService, borrowBookService: IBorrowBookService)
     extends BaseController {
 
     /**
@@ -96,7 +96,7 @@ class AdminIndexController @Autowired() (val userService: IUserService, val borr
         } catch {
             case e: Exception => return JsonResult.failure(e.getMessage())
         }
-        return JsonResult.success("注册成功,3秒后自动回到登录页面")
+        JsonResult.success("注册成功,3秒后自动回到登录页面")
     }
 
     //验证用户名【学号】是否已经被注册,委托给用户控制层
@@ -167,7 +167,7 @@ class AdminIndexController @Autowired() (val userService: IUserService, val borr
                 redirect(response, "/admin/logout")
             }
         }
-        val page = borrowBookService.findAll(builder.generateSpecification(), getPageRequest())
-        return page
+        borrowBookService.findAll(builder.generateSpecification(), getPageRequest())
+
     }
 }

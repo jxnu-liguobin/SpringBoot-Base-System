@@ -30,7 +30,7 @@ import java.util.{ List => JavaList }
  */
 @Controller
 @RequestMapping(value = { Array("/admin/resource") })
-class ResourceController @Autowired() (val resourceService: IResourceService) extends BaseController {
+class ResourceController @Autowired() (resourceService: IResourceService) extends BaseController {
 
     @RequestMapping(value = { Array("/tree/{resourceId}") })
     @ResponseBody
@@ -88,12 +88,12 @@ class ResourceController @Autowired() (val resourceService: IResourceService) ex
     @ResponseBody
     def delete(@PathVariable id: Int, map: ModelMap): JsonResult = {
         try {
-            resourceService.delete(id);
+            resourceService.delete(id)
         } catch {
             case e: Exception =>
-                e.printStackTrace();
-                return JsonResult.failure(e.getMessage());
+                e.printStackTrace()
+                return JsonResult.failure(e.getMessage())
         }
-        JsonResult.success();
+        JsonResult.success()
     }
 }
