@@ -14,6 +14,14 @@ import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
 /**
  * druid 配置
  * 
+ * 属性太多，偷懒没实现动态
+ * 
+ * 提示：
+ * 1、继承AbstractRoutingDataSource路由
+ * 2、ThreadLocal存数据源
+ * 3、构建数据源并初始化
+ * 4、AOP拦截注解+注解标记方法
+ * 
  * @author 梦境迷离
  * @time 2018年4月10日 下午4:59:48.
  * @version V1.0
