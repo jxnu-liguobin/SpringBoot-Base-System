@@ -70,6 +70,7 @@ public class LoginController extends BaseController {
 	@RequestMapping(value = { "/admin/login" }, method = RequestMethod.POST)
 	public String login(@RequestParam(value = "usercode", required = false) String usercode,
 			@RequestParam("password") String password, ModelMap model, boolean rememberMe) {
+
 		Subject subject = null;
 		UsernamePasswordToken token = null;
 		log.info("传进来的rememberMe：" + String.valueOf(rememberMe));

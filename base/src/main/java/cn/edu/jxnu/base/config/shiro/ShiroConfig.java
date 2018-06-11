@@ -137,6 +137,8 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/admin/regist", "anon");// 添加
 		filterChainDefinitionMap.put("/admin/login", "anon");
 
+		filterChainDefinitionMap.put("/isTrue", "anon"); // 验证码异步验证
+
 		// 个人信息
 		filterChainDefinitionMap.put("/admin/info/**", "anon");
 		// 自主还书
