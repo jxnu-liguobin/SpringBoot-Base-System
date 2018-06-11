@@ -8,12 +8,16 @@ import org.apache.shiro.cache.MemoryConstrainedCacheManager;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
+import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.apache.shiro.web.servlet.SimpleCookie;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Import;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Shiro配置
@@ -24,6 +28,7 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import(ShiroManager.class)
+@Slf4j
 public class ShiroConfig {
 
 	/**
@@ -102,6 +107,7 @@ public class ShiroConfig {
 	public DefaultSecurityManager securityManager() {
 		DefaultSecurityManager sm = new DefaultWebSecurityManager();
 		sm.setCacheManager(cacheManager());
+		sm.setRememberMeManager(rememberMeManager());// 注入记住我
 		return sm;
 	}
 
@@ -130,6 +136,7 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/assets/**", "anon");
 		filterChainDefinitionMap.put("/admin/regist", "anon");// 添加
 		filterChainDefinitionMap.put("/admin/login", "anon");
+
 		// 个人信息
 		filterChainDefinitionMap.put("/admin/info/**", "anon");
 		// 自主还书
@@ -161,8 +168,37 @@ public class ShiroConfig {
 		// 添加过滤条件
 		filterChainDefinitionMap.put("/admin/books/book_management", "perms[system:books:book_management]");
 
-		filterChainDefinitionMap.put("/admin/**", "authc");
+		filterChainDefinitionMap.put("/admin/**", "user"); // 默认所有均可依靠cookie,本项目隐藏bug,cookie太大，无法保存在浏览器本地
 		shiroFilter.setFilterChainDefinitionMap(filterChainDefinitionMap);
 		return shiroFilter;
+	}
+
+	/**
+	 * 产生cookie
+	 */
+	@Bean
+	@ConditionalOnMissingBean
+	public SimpleCookie rememberMeCookie() {
+
+		log.info("ShiroConfiguration.rememberMeCookie()");
+		// 这个参数是cookie的名称，对应前端的checkbox的name = rememberMe
+		SimpleCookie simpleCookie = new SimpleCookie("rememberMe");
+		// <!-- 记住我cookie生效时间30天 ,单位秒;-->
+		simpleCookie.setMaxAge(2592000);
+		simpleCookie.setComment("my cookie comment");
+		return simpleCookie;
+	}
+
+	/**
+	 * cookie管理对象
+	 */
+	@Bean
+	@ConditionalOnMissingBean
+	public CookieRememberMeManager rememberMeManager() {
+
+		log.info("ShiroConfiguration.rememberMeManager()");
+		CookieRememberMeManager cookieRememberMeManager = new CookieRememberMeManager();
+		cookieRememberMeManager.setCookie(rememberMeCookie());
+		return cookieRememberMeManager;
 	}
 }

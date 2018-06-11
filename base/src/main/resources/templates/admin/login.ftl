@@ -14,6 +14,15 @@
 <link href="${ctx!}/assets/css/animate.css" rel="stylesheet">
 <link href="${ctx!}/assets/css/style.css" rel="stylesheet">
 <link href="${ctx!}/assets/css/login.css" rel="stylesheet">
+<style>
+button {
+display: table
+width: auto
+margin-left: auto
+margin-right: auto
+}
+
+</style>
 <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -35,10 +44,12 @@
 					<h3 class="no-margins">图书管理系统</h3>
 					<h4 class="no-margins">登录：</h4>
 					<input type="text" class="form-control uname" name="usercode"
-						id="usercode" placeholder="用户码" /> <input type="password"
-						class="form-control pword m-b" name="password" id="password"
+						id="usercode" placeholder="用户码" /> 
+						<input type="password" class="form-control pword m-b" name="password" id="password"
 						placeholder="密码" />
-					<button class="btn btn-success btn-block">登录</button>
+						    &nbsp; &nbsp; &nbsp; <input type="checkbox"  name="rememberMe"  id="rememberMe"> 记住我
+		              &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;<button class="btn btn-success">登录</button> 
+					
 				</form>
 			</div>
 		</div>

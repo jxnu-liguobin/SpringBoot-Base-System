@@ -57,6 +57,8 @@ class AdminIndexController @Autowired() (userService: IUserService, borrowBookSe
     @RequestMapping(value = { Array("/admin/info") })
     def info(map: ModelMap, response: HttpServletResponse, @RequestParam(value    = "id", required = false) id: Int) = {
 
+        val subject = SecurityUtils.getSubject();
+        print("个人信息页面，rememberMe:" + subject.isRemembered())
         println("用户id:" + id)
         val u = SecurityUtils.getSubject().getSession().getAttribute(Constats.CURRENTUSER + id)
         if (u != null) {

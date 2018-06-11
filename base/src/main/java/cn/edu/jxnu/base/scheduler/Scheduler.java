@@ -12,9 +12,10 @@ import cn.edu.jxnu.base.config.shiro.RetryLimitHashedCredentialsMatcher;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 定时任务
+ * 定时任务 改
  * 
- * @author 梦境迷离 @time 下午2:05:52
+ * @author 梦境迷离.
+ * @time 2018年6月11日
  * @version V1.0
  *
  */

@@ -35,7 +35,7 @@ public class LoginController extends BaseController {
 
 	@Autowired
 	private IUserService userService;
-	
+
 	@Autowired
 	private MemorandumUtils memorandumUtils;
 
@@ -68,18 +68,22 @@ public class LoginController extends BaseController {
 	 * @return String
 	 */
 	@RequestMapping(value = { "/admin/login" }, method = RequestMethod.POST)
-	public String login(@RequestParam(value="usercode",required=false) String usercode, @RequestParam("password") String password,
-			ModelMap model) {
+	public String login(@RequestParam(value = "usercode", required = false) String usercode,
+			@RequestParam("password") String password, ModelMap model, boolean rememberMe) {
 		Subject subject = null;
 		UsernamePasswordToken token = null;
+		log.info("传进来的rememberMe：" + String.valueOf(rememberMe));
 		try {
-
 			subject = SecurityUtils.getSubject();
-			token = new UsernamePasswordToken(usercode, password);
-			subject.login(token);// 调用主体的login方法进行认证登录
-			log.info("password:" + password);
-			// 记录
-			memorandumUtils.saveMemorandum(memorandumUtils,usercode, userService.findByUserCode(usercode).getUserName(), "登陆");
+			if (!subject.isAuthenticated()) {// 没有进行认证
+				token = new UsernamePasswordToken(usercode, password);
+				token.setRememberMe(rememberMe);
+				subject.login(token);// 调用主体的login方法进行认证登录
+				log.info("password:" + password);
+				// 记录
+				memorandumUtils.saveMemorandum(memorandumUtils, usercode,
+						userService.findByUserCode(usercode).getUserName(), "登陆");
+			}
 			return redirect("/admin/index");
 		} catch (IncorrectCredentialsException e) {
 			model.put("message", e.getMessage());// 认证登录失败就进入登录页面
@@ -128,7 +132,7 @@ public class LoginController extends BaseController {
 	public String logout(@PathVariable("uCode") String uCode) {
 		Subject subject = SecurityUtils.getSubject();
 		subject.logout();// 调用主体的logout方法进行登出
-		memorandumUtils.saveMemorandum(memorandumUtils,uCode, userService.findByUserCode(uCode).getUserName(), "登出");
+		memorandumUtils.saveMemorandum(memorandumUtils, uCode, userService.findByUserCode(uCode).getUserName(), "登出");
 
 		return redirect("admin/login");
 	}
