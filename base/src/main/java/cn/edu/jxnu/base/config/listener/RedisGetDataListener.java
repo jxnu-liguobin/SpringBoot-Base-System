@@ -12,8 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import cn.edu.jxnu.base.entity.BorrowBook;
+import cn.edu.jxnu.base.redis.RedisService;
 import cn.edu.jxnu.base.service.IBorrowBookService;
-import cn.edu.jxnu.base.service.RedisService;
 import lombok.extern.slf4j.Slf4j;
 
 /**

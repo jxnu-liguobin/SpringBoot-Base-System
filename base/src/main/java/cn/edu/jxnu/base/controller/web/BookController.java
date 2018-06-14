@@ -25,10 +25,10 @@ import cn.edu.jxnu.base.entity.Book;
 import cn.edu.jxnu.base.entity.BorrowBook;
 import cn.edu.jxnu.base.entity.BorrowList;
 import cn.edu.jxnu.base.entity.User;
+import cn.edu.jxnu.base.redis.RedisService;
 import cn.edu.jxnu.base.service.IBookService;
 import cn.edu.jxnu.base.service.IBorrowBookService;
 import cn.edu.jxnu.base.service.IUserService;
-import cn.edu.jxnu.base.service.RedisService;
 import cn.edu.jxnu.base.service.specification.SimpleSpecificationBuilder;
 import cn.edu.jxnu.base.service.specification.SpecificationOperator.Operator;
 
@@ -366,18 +366,17 @@ public class BookController extends BaseController {
 			 * @parameter
 			 * @return Page<Book>
 			 *//*
-			 * @RequestMapping(value = { "/list" })
-			 * 
-			 * @ResponseBody public Page<Book> list() {
-			 * 
-			 * SimpleSpecificationBuilder<Book> builder = new
-			 * SimpleSpecificationBuilder<Book>(); String searchText =
-			 * request.getParameter("searchText"); if
-			 * (StringUtils.isNotBlank(searchText)) { builder.add("bookName",
-			 * Operator.likeAll.name(), searchText); } Page<Book> page =
-			 * bookService.findAll(builder.generateSpecification(),
-			 * getPageRequest()); return page; }
-			 */
+				 * @RequestMapping(value = { "/list" })
+				 * 
+				 * @ResponseBody public Page<Book> list() {
+				 * 
+				 * SimpleSpecificationBuilder<Book> builder = new
+				 * SimpleSpecificationBuilder<Book>(); String searchText =
+				 * request.getParameter("searchText"); if (StringUtils.isNotBlank(searchText)) {
+				 * builder.add("bookName", Operator.likeAll.name(), searchText); } Page<Book>
+				 * page = bookService.findAll(builder.generateSpecification(),
+				 * getPageRequest()); return page; }
+				 */
 
 	/**
 	 * 前台查询图书

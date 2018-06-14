@@ -1,12 +1,12 @@
 package cn.edu.jxnu.base.vcode;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import cn.edu.jxnu.base.redis.RedisService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -19,14 +19,17 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 @Slf4j
 public class GifCodeController {
+
+	@Autowired
+	private RedisService redisService;
+
 	/**
 	 * 获取验证码（Gif版本）
 	 * 
 	 * @param response
 	 */
-
 	@RequestMapping("getGifCode")
-	public void getGifCode(HttpServletResponse response, HttpServletRequest request) {
+	public void getGifCode(HttpServletResponse response) {
 		try {
 
 			response.setHeader("Pragma", "No-cache");
@@ -42,9 +45,9 @@ public class GifCodeController {
 			/**
 			 * 第一次请求的时候没有session
 			 */
-			HttpSession session = request.getSession(true);
-			// 存入shiro Session 10分钟，可以使用使用ehcache redis 来替代
-			session.setAttribute("_code", captcha.text().toLowerCase());
+			// 存入shiro Session 10分钟，改使用 redis 来替代
+			redisService.set("_code", captcha.text().toLowerCase(), 30);
+			log.info("后端产生的验证码：" + captcha.text());
 		} catch (Exception e) {
 			log.info("获取验证码异常：" + e.getMessage());
 		}

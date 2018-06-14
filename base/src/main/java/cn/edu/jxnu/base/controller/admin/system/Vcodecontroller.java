@@ -1,12 +1,12 @@
 package cn.edu.jxnu.base.controller.admin.system;
 
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import cn.edu.jxnu.base.redis.RedisService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -17,6 +17,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Controller
 public class Vcodecontroller {
+
+	@Autowired
+	private RedisService redisService;
 
 	/**
 	 * 这里有个BUG，第一次请求的时候验证码2秒发送一个请求是正常的，但是验证码错误，进行第二次输入时，每次输入单个字母就发送请求。未知原因
@@ -34,16 +37,20 @@ public class Vcodecontroller {
 			return result;
 
 		}
-		Session session = SecurityUtils.getSubject().getSession();
+		String rcode = redisService.get("_code");
 		// 转化成小写字母
-		vcode = vcode.toLowerCase();
-		String v = (String) session.getAttribute("_code");
-		// 还可以读取一次后把验证码清空，这样每次登录都必须获取验证码
-		if (!vcode.equals(v)) {
+		if (rcode == null) {
 			return result;
 		}
-		result = true;
-		session.removeAttribute("_code");
+		vcode = vcode.toLowerCase();
+		// 还可以读取一次后把验证码清空，这样每次登录都必须获取验证码
+		if (!vcode.equals(rcode)) {
+			return result;// 验证失败
+		}
+		if (redisService.del("_code")) {
+			// 先删除再设置验证成功
+			result = true;
+		}
 		return result;
 
 	}

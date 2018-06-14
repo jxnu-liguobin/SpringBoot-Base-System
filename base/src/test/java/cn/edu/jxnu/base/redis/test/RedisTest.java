@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import cn.edu.jxnu.base.Application;
-import cn.edu.jxnu.base.service.RedisService;
+import cn.edu.jxnu.base.redis.RedisService;
 
 /**
  * Copyright © 2018 梦境迷离. All rights reserved.
