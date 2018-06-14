@@ -62,7 +62,7 @@
     7）在线测试信息
     账号：1526705033 密码：111111 角色：test 用户姓名：test
     拥有所有权限【禁用了资源修改与删除，希望在线测试者不要修改本账号的密码。】
-    注：因使用natapp映射，速度可能有点慢。
+    注：因使用natapp映射，速度可能有点慢【6月停机不再提供在线测试】。
     
     
 ### ^ ^
@@ -110,7 +110,7 @@
 ###     QAQ
         
         
-        EhCache缓存不会过期失效、CacheEventListener失效
+        未知原因导致EhCache缓存不会过期失效、CacheEventListener失效
         但是CacheManagerEventListener正常,导致锁定用户不能自动恢复
         考虑重写密码次数限制逻辑
         
