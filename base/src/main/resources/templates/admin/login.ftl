@@ -93,12 +93,12 @@ button {
 						required : true,
 						minlength : 6
 					},
-					vcode: {
+					vcode : {
 					   required : true,
 					   remote:{
                    	 		url:"/isTrue",//该url没有被拦截
                    	 		type: 'GET',//请求方式
-                   	 		delay :  1000,
+                   	 		delay:2000,
                    	 		//默认提交当前input value
                   		 } 
 					}
@@ -146,7 +146,8 @@ button {
 	    function changeImg() {  
 	        var imgSrc = $("#vcode");  
 	        var src = '/getGifCode'
-	        imgSrc.attr("src", changeUrl(src));  
+	        imgSrc.attr("src", changeUrl(src)); 
+	        location.reload();
 	    }  
 	    //为了使每次生成图片不一致，即不让浏览器读缓存，所以需要加上时间戳  
 	    function changeUrl(url) {  

@@ -18,6 +18,13 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 public class Vcodecontroller {
 
+	/**
+	 * 这里有个BUG，第一次请求的时候验证码2秒发送一个请求是正常的，但是验证码错误，进行第二次输入时，每次输入单个字母就发送请求。未知原因
+	 * 
+	 * @param vcode
+	 * @return
+	 *
+	 */
 	@ResponseBody
 	@RequestMapping(value = "/isTrue")
 	public boolean isTrue(@RequestParam("vcode") String vcode) {
@@ -32,11 +39,11 @@ public class Vcodecontroller {
 		vcode = vcode.toLowerCase();
 		String v = (String) session.getAttribute("_code");
 		// 还可以读取一次后把验证码清空，这样每次登录都必须获取验证码
-		session.removeAttribute("_code");
 		if (!vcode.equals(v)) {
 			return result;
 		}
 		result = true;
+		session.removeAttribute("_code");
 		return result;
 
 	}

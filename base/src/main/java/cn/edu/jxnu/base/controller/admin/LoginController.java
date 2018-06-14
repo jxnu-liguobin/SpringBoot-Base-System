@@ -51,7 +51,6 @@ public class LoginController extends BaseController {
 	 */
 	@RequestMapping(value = { "/admin/login" }, method = RequestMethod.GET)
 	public String login() {
-
 		return "admin/login";
 	}
 

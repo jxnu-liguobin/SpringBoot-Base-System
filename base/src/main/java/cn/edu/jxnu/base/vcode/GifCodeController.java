@@ -2,9 +2,8 @@ package cn.edu.jxnu.base.vcode;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -25,9 +24,11 @@ public class GifCodeController {
 	 * 
 	 * @param response
 	 */
+
 	@RequestMapping("getGifCode")
 	public void getGifCode(HttpServletResponse response, HttpServletRequest request) {
 		try {
+
 			response.setHeader("Pragma", "No-cache");
 			response.setHeader("Cache-Control", "no-cache");
 			response.setDateHeader("Expires", 0);
@@ -38,7 +39,10 @@ public class GifCodeController {
 			Captcha captcha = new GifCaptcha(130, 30, 4);
 			// 输出
 			captcha.out(response.getOutputStream());
-			Session session = SecurityUtils.getSubject().getSession();
+			/**
+			 * 第一次请求的时候没有session
+			 */
+			HttpSession session = request.getSession(true);
 			// 存入shiro Session 10分钟，可以使用使用ehcache redis 来替代
 			session.setAttribute("_code", captcha.text().toLowerCase());
 		} catch (Exception e) {

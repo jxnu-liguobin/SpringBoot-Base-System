@@ -30,7 +30,7 @@ import lombok.extern.slf4j.Slf4j;
 @Import(ShiroManager.class)
 @Slf4j
 public class ShiroConfig {
-
+	
 	/**
 	 * 注入MyRealm
 	 * 
@@ -203,4 +203,5 @@ public class ShiroConfig {
 		cookieRememberMeManager.setCookie(rememberMeCookie());
 		return cookieRememberMeManager;
 	}
+
 }
