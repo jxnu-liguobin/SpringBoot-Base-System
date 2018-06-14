@@ -103,6 +103,7 @@
         使用Scala重构部分非耦合代码代码
         增加GIF验证码
         增加rememberMe,但是cookie无法写入本地（BUG）
+        增加redis订阅键值对过期事件监听
         Loading...
  
  
@@ -112,3 +113,10 @@
         EhCache缓存不会过期失效、CacheEventListener失效
         但是CacheManagerEventListener正常,导致锁定用户不能自动恢复
         考虑重写密码次数限制逻辑
+        
+        未知原因导致bootstrap异步验证在验证第二次输入时，delay属性失效，即在第二次使用验证码验证时对每个字母都会发送请求
+        目前已经通过重加载禁止此BUG
+        
+        未知原因导致验证码被写入页面时，session第一次被创建时会失败。使用拦截器先创建一个session也无效，目前已使用redis存储验证码
+        
+
