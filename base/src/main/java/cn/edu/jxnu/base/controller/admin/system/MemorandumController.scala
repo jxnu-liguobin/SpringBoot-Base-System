@@ -54,7 +54,7 @@ class MemorandumController @Autowired() (memorandumService: IMemorandumService) 
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                JsonResult.failure(e.getMessage())
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }

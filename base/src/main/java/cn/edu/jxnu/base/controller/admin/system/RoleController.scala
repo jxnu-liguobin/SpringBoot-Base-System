@@ -74,7 +74,7 @@ class RoleController @Autowired() (roleService: IRoleService, memorandumUtils: M
                 "修改/新增角色", role.getRoleKey() + " | " + role.getName())
         } catch {
             case e: Exception =>
-                JsonResult.failure(e.getMessage())
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -88,7 +88,7 @@ class RoleController @Autowired() (roleService: IRoleService, memorandumUtils: M
             roleService.delete(id)
         } catch {
             case e: Exception =>
-                JsonResult.failure(e.getMessage())
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -109,7 +109,7 @@ class RoleController @Autowired() (roleService: IRoleService, memorandumUtils: M
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                JsonResult.failure(e.getMessage())
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }

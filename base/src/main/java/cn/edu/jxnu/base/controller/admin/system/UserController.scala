@@ -78,7 +78,7 @@ class UserController @Autowired() (credentialsMatcher: RetryLimitHashedCredentia
 
         } catch {
             case e: Exception =>
-                JsonResult.failure(e.getMessage())
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
@@ -104,7 +104,7 @@ class UserController @Autowired() (credentialsMatcher: RetryLimitHashedCredentia
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                JsonResult.failure(e.getMessage())
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success(res)
     }
@@ -130,7 +130,8 @@ class UserController @Autowired() (credentialsMatcher: RetryLimitHashedCredentia
         } catch {
             case e: Exception =>
                 e.printStackTrace()
-                JsonResult.failure(e.getMessage())
+                //return不能省略
+                return JsonResult.failure(e.getMessage())
         }
         JsonResult.success()
     }
