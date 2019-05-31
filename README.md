@@ -1,4 +1,4 @@
-![AUR](https://img.shields.io/aur/license/yaourt.svg)
+
 ##  项目说明 
 *   系统管理后台基本功能包括:
 
