@@ -17,7 +17,7 @@
 	<properties>
 		<!--跳过测试 -->
 		<skipTests>true</skipTests>
-		<shiro.version>1.2.4</shiro.version>
+		<shiro.version>1.5.3</shiro.version>
 		<java.version>1.8</java.version>
 	</properties>
 
